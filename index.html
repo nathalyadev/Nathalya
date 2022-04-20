@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathálya Lima</title>
+    <link rel="stylesheet" href="public/estilo.css">
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navegacao">
+            <ul class="grid">
+                <li><a class="link" href="index.html">Início</a></li>
+                <li><a class="link" href="#contato">Contato</a></li>
+                <li><a href="index.html"><img src="assets/logo.svg" alt=""></a></li>
+                <li><a class="link" href="#projetos">Projetos</a></li>
+                <li><a class="link" href="#quemSou">Quem sou?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="bem-vindo">
+            <section>
+                <h1>Bem vindo(a)</h1>
+                <p>Olá meu nome é Nathálya</p>
+                <p>Análise e desenvolvimento de sistemas</p>
+                <img src="assets/GitHub.svg" alt="Logo do github ">
+                <img src="assets/LinkedIn.svg" alt="Logo do linkedin">
+                <p>Email para contato: ns.contato21@gmail.com</p>
+                <button class="btnAcessar"><a href="#quemSou">Quem sou?</a></button>
+                <button class="btnAcessar"><a href="#formacao">Formação</a></button>
+            </section>
+
+            <section class="minha-foto">
+                <img class="blobs1" src="assets/blobs1.svg" alt="blobs">
+                <img class="blobs2" src="assets/blobs2.svg" alt="blobs2">
+                <img class="blobs3" src="assets/blobs3.svg" alt="blobs3">
+            </section>
+        </section>
+
+        <section class="minhas-informacoes">
+            <section class="quem-sou">
+                <h1 id="quemSou">Quem sou?</h1>
+                <p class="texto">
+                    Sou uma pessoa bastante curiosa que gosta de desafios e com grande paixão por tecnologia. Gosto de
+                    estudar sobre design e programação mais voltada para o front-end, porém também quero melhorar meus
+                    conhecimentos voltados ao back-end. Meus conhecimentos são referentes às tecnologias HTML, CSS,
+                    Javascript, PHP e Mysql.
+                </p>
+            </section>
+            <section class="formacao">
+                <h1 id="formacao">Formação</h1>
+                <p class="texto">
+                    Atualmente estou cursando faculdade de Análise e desenvolvimento de sistemas e tenho curso Técnico
+                    em informática com interesse em atuar na área de front-end ou back-end ou quem sabe os dois
+                    fullstack.
+                </p>
+            </section>
+        </section>
+        <section class="projetos">
+            <h1 id="projetos">Projetos</h1>
+            <section class="meus-projetos">
+                <section class="projeto login">
+                    <img class="login-img" src="assets/pictures/login.png" alt="Imagem da página de login - contendo um titulo com o 
+                    nome login e dois campos um de usuario e outro de senha logo abaixo tem um 
+                    link com o nome Lembrar senha e outro com o nome Mostrar/esconder senha...">
+                    <section class="informacoes-img">
+                        <h2>Página de Login</h2>
+                        <p class="informacoes-login">
+                            Esse projeto é mais visual não há um banco de dados para fazer as devidas requisições,
+                            porém essa funcionalidade será adicionada futuramente. <br />
+                            Projeto baseado em HTML, CSS e Javascript. Esse projeto está responsivo e com
+                            acessibilidade em libras.
+                        </p>
+                        <button class="btnAcessar"><a href="https://nathgit198.github.io/LoginForm.github.io/"
+                                target="_blank">Acessar</a></button>
+                    </section>
+                </section>
+                <section class="projeto portfolio">
+                    <img class="portfolio-img" src="assets/pictures/Portfólio.svg" alt="Imagem da página de login - contendo um titulo com o 
+                    nome login e dois campos um de usuario e outro de senha logo abaixo tem um 
+                    link com o nome Lembrar senha e outro com o nome Mostrar/esconder senha...">
+                    <section class="informacoes-img">
+                        <h2>Página portfólio no figma</h2>
+                        <p class="informacoes">
+                            Design feito no figma do meu portfólio
+                        </p>
+                        <button class="btnAcessar"><a href="https://www.figma.com/file/AW16whNhlCaKgkAjKgEDBA/Nath%C3%A1lya---portf%C3%B3lio?node-id=1%3A4"
+                                target="_blank">Acessar</a></button>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="contato">
+            <h1>Entre em Contato</h1>
+            <form class="contato-form" action="https://formsubmit.co/ns.contato21@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                <input type="hidden" name="_template" value="box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"
+                    required></textarea>
+                <!-- <input type="text" name="mensagem" id="mensagem" required> -->
+                <button class="btnEnviar" type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="rodape">
+            <section class="rodape-informacoes">
+                <section class="informacoes">
+                    <a href="index.html"><img class="logo" src="assets/logo.svg"
+                            alt="minha logo, com um N e S maiúsculo um ao lado do outro"></a>
+                    <ul class="plataformas">
+                        <li>
+                            <a href="https://github.com/nathgit198" target="_blank"><img src="assets/GitHub.svg"
+                                    alt=""></a>
+                            <p class="github-nome">nathgit198</p>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
+                                    src="assets/LinkedIn.svg" alt=""></a>
+                            <p class="linkedin-nome">Nathálya</p>
+                        </li>
+                        <li>
+                            <a><img src="assets/Gmail.svg" alt=""></a>
+                            <p class="email-nome">ns.contato21@gmail.com</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="contato" class="links">
+                    <h2>Links</h2>
+                    <ul class="links-rodape">
+                        <li><a class="link" href="index.html">Início</a></li>
+                        <li><a class="link" href="#contato">Contato</a></li>
+                        <li><a class="link" href="#quemSou">Quem sou?</a></li>
+                    </ul>
+                </section>
+            </section>
+            <span>Criado por Nathálya Lima | Todos os direitos reservado 2022</span>
+        </section>
+    </main>
+</body>
+
+</html>
