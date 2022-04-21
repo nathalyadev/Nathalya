@@ -61,11 +61,37 @@ span {
 ::-webkit-scrollbar-thumb {
     background: #805d6f;
 }
+/* Scroll */
+.btn-scroll-top {
+    border: 2px solid #000;
+    border-radius: 2rem;
+    width: 3.5rem;
+    height: 6rem;
+
+    position: fixed;
+    right: 2%;
+    top: 87%;
+
+    background: gba(255, 255, 255, 0.746);
+
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+.scroll-top-img {
+    width: 50%;
+    /* margin-top: 35%; */
+    margin-left: 25%;
+}
+.btn-scroll-visible {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* Header */
 header {
     background: #ffffff;
-
 }
 
 .navegacao {
@@ -102,6 +128,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.toggle {
+    display: none;
 }
 
 /* Container */
@@ -152,31 +182,33 @@ header {
     background: #947292;
 }
 
-/* .btnAcessar a {
-    font-weight: 600;
-} 
-
-.blobs1 {
-    position: relative;
-    left: 35%;
-    z-index: -1;
-    top: 2rem;
-}
-
-.blobs3 {
-    position: relative;
-    left: -28%;
-}
-*/
-
 /* Seção minhas-informacoes */
 .minhas-informacoes {
     display: flex;
     margin: 3rem 0;
 }
-
-.quem-sou {
-    max-width: 600px;
+.quem-sou, .formacao {
+    width: 30vw;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: center;
+}
+#quemSou, #formacao {
+    padding-bottom: 20px;
+    cursor: pointer;
+    background: #805d6f;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.texto {
+    display: none;
+    padding: 20px;
+    background: white;
+}
+.block {
+    display: block;
 }
 
 /* Seção projetos */
@@ -199,7 +231,8 @@ header {
     background: #94848d;
     color: white;
     width: 100vw;
-    height: 50vh;
+    height: auto;
+    max-height: 70vh;
     margin: 3rem 0;
     display: flex;
     align-items: center;
@@ -240,7 +273,6 @@ header {
     width: 650px;
     height: 500px;
     margin: 3rem 0;
-
 }
 
 .contato-form {
@@ -326,32 +358,24 @@ textarea:focus {
     align-items: center;
 }
 
+.headline:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: flash .7s infinite;
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
 /* Responsividade */
-
-/* Menor que 1023 */
-@media screen and (max-width:1024px) {
-    .projetos {
-        height: 68vh;
-    }
-}
-
-/* Maior que 1024 */
-@media screen and (min-width:1024px) {
-    .projetos {
-        height: 68vh;
-    }
-    .rodape {
-        height: 26vh;
-    }
-}
-
-/* Maior que 1400 */
-@media (min-width:1400px) {
-    .projetos {
-        height: 70vh;
-    }
-
-    .rodape {
-        height: 26vh;
-    }
-}

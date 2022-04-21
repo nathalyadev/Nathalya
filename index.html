@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathálya Lima</title>
-    <link rel="stylesheet" href="public/estilo.css">
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,28 +13,44 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="public/estilo.css">
 </head>
 
-<body>
-    <header>
+<body id="top">
+    
+    <section class="btn-scroll-top" data-scroll-top>
+        <a href="#top"><img class="scroll-top-img" src="assets/icons/arrow-top.svg" alt="Botão seta virada para cima"></a>
+    </section>
+
+    <header id="header">
         <nav class="navegacao">
-            <ul class="grid">
-                <li><a class="link" href="index.html">Início</a></li>
-                <li><a class="link" href="#contato">Contato</a></li>
-                <li><a href="index.html"><img src="assets/logo.svg" alt=""></a></li>
-                <li><a class="link" href="#projetos">Projetos</a></li>
-                <li><a class="link" href="#quemSou">Quem sou?</a></li>
-            </ul>
+            <section class="menu">
+                <!-- Menu -->
+                <img class="toggle icon-menu" onclick="exibirMenu()" src="assets/icons/icon-menu.svg" alt="menu hamburguer de tres linhas"
+                    width="30" height="30">
+                <img class="toggle icon-close" onclick="ocultarMenu()" src="assets/icons/icon-close.svg" alt="icon em formato de X"
+                    width="30" height="30">
+                <ul class="grid">
+                    <li><a class="link" href="index.html">Início</a></li>
+                    <li><a class="link" href="#contato">Contato</a></li>
+                    <li><a class="logo" href="index.html"><img src="assets/logo.svg" alt=""></a></li>
+                    <li><a class="link" href="#projetos">Projetos</a></li>
+                    <li><a class="link" href="#quemSou">Quem sou?</a></li>
+                </ul>
+            </section>
         </nav>
     </header>
     <main class="conteudo">
+
         <section class="bem-vindo">
             <section>
                 <h1>Bem vindo(a)</h1>
-                <p>Olá meu nome é Nathálya</p>
+                <p id="escrever"></p>
                 <p>Análise e desenvolvimento de sistemas</p>
-                <img src="assets/GitHub.svg" alt="Logo do github ">
-                <img src="assets/LinkedIn.svg" alt="Logo do linkedin">
+                <a href="https://github.com/nathgit198" target="_blank"><img src="assets/GitHub.svg"
+                        alt="Logo do github "></a>
+                <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
+                        src="assets/LinkedIn.svg" alt="Logo do linkedin"></a>
                 <p>Email para contato: ns.contato21@gmail.com</p>
                 <button class="btnAcessar"><a href="#quemSou">Quem sou?</a></button>
                 <button class="btnAcessar"><a href="#formacao">Formação</a></button>
@@ -43,7 +58,7 @@
 
             <section class="minha-foto">
                 <img src="assets/pictures/foto.svg" alt="">
-<!--                 <img class="blobs1" src="assets/blobs1.svg" alt="blobs">
+                <!--                 <img class="blobs1" src="assets/blobs1.svg" alt="blobs">
                 <img class="blobs2" src="assets/blobs2.svg" alt="blobs2">
                 <img class="blobs3" src="assets/blobs3.svg" alt="blobs3"> -->
             </section>
@@ -59,6 +74,7 @@
                     Javascript, PHP e Mysql.
                 </p>
             </section>
+
             <section class="formacao">
                 <h1 id="formacao">Formação</h1>
                 <p class="texto">
@@ -68,6 +84,7 @@
                 </p>
             </section>
         </section>
+
         <section class="projetos">
             <h1 id="projetos">Projetos</h1>
             <section class="meus-projetos">
@@ -96,12 +113,14 @@
                         <p class="informacoes">
                             Design feito no figma do meu portfólio
                         </p>
-                        <button class="btnAcessar"><a href="https://www.figma.com/file/AW16whNhlCaKgkAjKgEDBA/Nath%C3%A1lya---portf%C3%B3lio?node-id=1%3A4"
+                        <button class="btnAcessar"><a
+                                href="https://www.figma.com/file/AW16whNhlCaKgkAjKgEDBA/Nath%C3%A1lya---portf%C3%B3lio?node-id=1%3A4"
                                 target="_blank">Acessar</a></button>
                     </section>
                 </section>
             </section>
         </section>
+
         <section class="contato">
             <h1>Entre em Contato</h1>
             <form class="contato-form" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013" method="POST">
@@ -150,7 +169,9 @@
             </section>
             <span>Criado por Nathálya Lima | Todos os direitos reservado 2022</span>
         </section>
+
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
