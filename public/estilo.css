@@ -61,29 +61,29 @@ span {
 ::-webkit-scrollbar-thumb {
     background: #805d6f;
 }
+
 /* Scroll */
 .btn-scroll-top {
     border: 2px solid #000;
-    border-radius: 2rem;
+    border-radius: 50%;
     width: 3.5rem;
-    height: 6rem;
-
+    height: 3.5rem;
     position: fixed;
     right: 2%;
-    top: 87%;
-
+    top: 93%;
     background: gba(255, 255, 255, 0.746);
-
     visibility: hidden;
     opacity: 0;
     display: flex;
     align-items: center;
 }
+
 .scroll-top-img {
     width: 50%;
     /* margin-top: 35%; */
     margin-left: 25%;
 }
+
 .btn-scroll-visible {
     visibility: visible;
     opacity: 1;
@@ -171,7 +171,7 @@ header {
     font-size: 16px;
     border: none;
     background: #ad84ab;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-top: 1rem;
     cursor: pointer;
     transition: 1s;
@@ -181,19 +181,27 @@ header {
 .btnEnviar:hover {
     background: #947292;
 }
+.btnAcessar:focus,
+.btnEnviar:focus {
+    outline-style: none;
+}
 
 /* Seção minhas-informacoes */
 .minhas-informacoes {
     display: flex;
     margin: 3rem 0;
 }
-.quem-sou, .formacao {
+
+.quem-sou,
+.formacao {
     width: 30vw;
     margin-top: 40px;
     margin-left: 40px;
     text-align: center;
 }
-#quemSou, #formacao {
+
+#quemSou,
+#formacao {
     padding-bottom: 20px;
     cursor: pointer;
     background: #805d6f;
@@ -202,25 +210,18 @@ header {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .texto {
     display: none;
     padding: 20px;
     background: white;
 }
+
 .block {
     display: block;
 }
 
 /* Seção projetos */
-.meus-projetos {
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-}
-
 .meus-projetos h1 {
     margin: 1rem 0.8rem;
 }
@@ -238,41 +239,64 @@ header {
     align-items: center;
     flex-direction: column;
 }
+.dica {
+    color: #e9e9e9;
+}
 
+/* Slider */
+.slide {
+    display: flex;
+    align-items: center;
+}
+.mySlides {
+    display: none;
+    /* width: 1250px; */
+    height: 500px;
+    border-radius: 5px;
+}
+.mySlides:hover {
+    cursor: pointer;
+}
+.btn-slide img {
+    height: 50px;
+    margin: 0 1rem;
+    width: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.login-test {
+    position: relative;
+}
 .login-img {
-    width: 450px;
-    height: 400px;
     object-fit: cover;
-    border-radius: 5px;
 }
-
-.portfolio-img {
-    width: 450px;
-    height: 400px;
-    border-radius: 5px;
-}
-
-.projeto {
-    display: flex;
-    align-items: center;
-    margin: 1rem 1rem;
-}
-
-.informacoes-img {
-    display: flex;
+.mySlides img {
     width: 550px;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
+    height: 500px;
 }
 
 /* Seção contato */
 .contato {
-    background: white;
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.contato section:nth-child(1) {
+    width: 350px;
+}
+
+.formulario {
+    width: 600px;
+    height: 600px;
     padding: 20px;
-    width: 650px;
-    height: 500px;
     margin: 3rem 0;
+    background: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .contato-form {
@@ -288,6 +312,7 @@ textarea {
     border-bottom: 2px solid #94848d;
     /* background: #94848d; */
     font-size: 14px;
+    resize: none;
 }
 
 input[type=text] {
@@ -376,6 +401,3 @@ textarea:focus {
         opacity: 0;
     }
 }
-
-
-/* Responsividade */

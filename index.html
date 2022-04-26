@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathálya Lima</title>
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +17,24 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="public/estilo.css">
+    <link rel="stylesheet" href="public/estilo-responsivo.css">
 </head>
 
 <body id="top">
-    
+
     <section class="btn-scroll-top" data-scroll-top>
-        <a href="#top"><img class="scroll-top-img" src="assets/icons/arrow-top.svg" alt="Botão seta virada para cima"></a>
+        <a href="#top"><img class="scroll-top-img" src="assets/icons/arrow-top.svg"
+                alt="Botão seta virada para cima"></a>
     </section>
 
     <header id="header">
         <nav class="navegacao">
             <section class="menu">
                 <!-- Menu -->
-                <img class="toggle icon-menu" onclick="exibirMenu()" src="assets/icons/icon-menu.svg" alt="menu hamburguer de tres linhas"
-                    width="30" height="30">
-                <img class="toggle icon-close" onclick="ocultarMenu()" src="assets/icons/icon-close.svg" alt="icon em formato de X"
-                    width="30" height="30">
+                <img class="toggle icon-menu" onclick="exibirMenu()" src="assets/icons/icon-menu.svg"
+                    alt="menu hamburguer de tres linhas" width="30" height="30">
+                <img class="toggle icon-close" onclick="ocultarMenu()" src="assets/icons/icon-close.svg"
+                    alt="icon em formato de X" width="30" height="30">
                 <ul class="grid">
                     <li><a class="link" href="index.html">Início</a></li>
                     <li><a class="link" href="#contato">Contato</a></li>
@@ -52,8 +57,8 @@
                 <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
                         src="assets/LinkedIn.svg" alt="Logo do linkedin"></a>
                 <p>Email para contato: ns.contato21@gmail.com</p>
-                <button class="btnAcessar"><a href="#quemSou">Quem sou?</a></button>
-                <button class="btnAcessar"><a href="#formacao">Formação</a></button>
+                <a href="#quemSou"><button class="btnAcessar">Quem sou?</button></a>
+                <a href="#formacao"><button class="btnAcessar">Formação</button></a>
             </section>
 
             <section class="minha-foto">
@@ -87,53 +92,55 @@
 
         <section class="projetos">
             <h1 id="projetos">Projetos</h1>
-            <section class="meus-projetos">
-                <section class="projeto login">
-                    <img class="login-img" src="assets/pictures/login.png" alt="Imagem da página de login - contendo um titulo com o 
-                    nome login e dois campos um de usuario e outro de senha logo abaixo tem um 
-                    link com o nome Lembrar senha e outro com o nome Mostrar/esconder senha...">
-                    <section class="informacoes-img">
-                        <h2>Página de Login</h2>
-                        <p class="informacoes-login">
-                            Esse projeto é mais visual não há um banco de dados para fazer as devidas requisições,
-                            porém essa funcionalidade será adicionada futuramente. <br />
-                            Projeto baseado em HTML, CSS e Javascript. Esse projeto está responsivo e com
-                            acessibilidade em libras.
-                        </p>
-                        <button class="btnAcessar"><a href="https://nathgit198.github.io/LoginForm.github.io/"
-                                target="_blank">Acessar</a></button>
+            <section class="slide">
+                <section class="btn-slide" onclick="plusDivs(-1)"><img src="assets/icons/arrow-left.svg"
+                        alt="seta direcionada para a esquerda"></section>
+                <section class="meus-projetos">
+                    <section class="login mySlides">
+                        <button type="button" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                            <img class="login-img" src="assets/pictures/login.png">
+                        </button>
+
+                    </section>
+                    <section class="mySlides portfolio">
+                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-xl">
+                            <img class="portfolio-img" src="assets/pictures/Portfólio.svg" alt="Imagem da página de login - contendo um titulo com o 
+                        nome login e dois campos um de usuario e outro de senha logo abaixo tem um 
+                        link com o nome Lembrar senha e outro com o nome Mostrar/esconder senha...">
+                        </button>
                     </section>
                 </section>
-                <section class="projeto portfolio">
-                    <img class="portfolio-img" src="assets/pictures/Portfólio.svg" alt="Imagem da página de login - contendo um titulo com o 
-                    nome login e dois campos um de usuario e outro de senha logo abaixo tem um 
-                    link com o nome Lembrar senha e outro com o nome Mostrar/esconder senha...">
-                    <section class="informacoes-img">
-                        <h2>Página portfólio no figma</h2>
-                        <p class="informacoes">
-                            Design feito no figma do meu portfólio
-                        </p>
-                        <button class="btnAcessar"><a
-                                href="https://www.figma.com/file/AW16whNhlCaKgkAjKgEDBA/Nath%C3%A1lya---portf%C3%B3lio?node-id=1%3A4"
-                                target="_blank">Acessar</a></button>
-                    </section>
-                </section>
+
+                <section class="btn-slide" onclick="plusDivs(1)"><img src="assets/icons/arrow-right.svg"
+                        alt="seta direcionada para a direita"></section>
             </section>
+            <span class="dica">Clique sobre a imagem para saber mais</span>
         </section>
 
         <section class="contato">
-            <h1>Entre em Contato</h1>
-            <form class="contato-form" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013" method="POST">
-                <input type="hidden" name="_next" value="https://nathgit198.github.io/Nathalya/thanks.html">
-                <input type="hidden" name="_template" value="box">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"
-                    required></textarea>
-                <!-- <input type="text" name="mensagem" id="mensagem" required> -->
-                <button class="btnEnviar" type="submit">Enviar</button>
-            </form>
+
+            <section>
+                <h1>Entre em Contato</h1>
+                <p>Caso queira enviar uma mensagem preencha o formulário ao lado. <br>
+                    Está precisando de um site para o seu negocio envie uma proposta preenchendo o formulário.
+                </p>
+            </section>
+
+            <section class="formulario">
+                <h1>Formulário de Contato</h1>
+                <form class="contato-form" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013"
+                    method="POST">
+                    <input type="hidden" name="_next" value="https://nathgit198.github.io/Nathalya/thanks.html">
+                    <input type="hidden" name="_template" value="box">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"
+                        required></textarea>
+                    <!-- <input type="text" name="mensagem" id="mensagem" required> -->
+                    <button class="btnEnviar" type="submit">Enviar</button>
+                </form>
+            </section>
         </section>
 
         <section class="rodape">
@@ -171,6 +178,69 @@
         </section>
 
     </main>
+
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+        aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Página de Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Esse projeto é mais visual não há um banco de dados para fazer as devidas requisições,
+                        porém essa funcionalidade será adicionada futuramente. <br />
+                        Projeto baseado em HTML, CSS e Javascript. Esse projeto está responsivo e com
+                        acessibilidade em libras.
+                    </p>
+                    <a href="https://nathgit198.github.io/LoginForm.github.io/"
+                            target="_blank"><button class="btnAcessar">Acessar</button></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Portfolio-->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Página portfólio no figma</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Design feito no figma do meu portfólio
+                        </p>
+                        <a href="https://www.figma.com/file/AW16whNhlCaKgkAjKgEDBA/Nath%C3%A1lya---portf%C3%B3lio?node-id=1%3A4"
+                            target="_blank"><button class="btnAcessar">Acessar</button></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
     <script src="script.js"></script>
 </body>
 
