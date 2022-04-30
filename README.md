@@ -21,5 +21,5 @@ Este projeto foi criado com o intuito de reunir em uma só página informações
 
 - #### E-mail: ns.contato21@gmail.com
 
-<h1 align="center">Autor</h1>
+<h2 align="center">Autor</h2>
 <p align="center">Nathálya Lima </p>
