@@ -11,7 +11,6 @@ Este projeto foi criado com o intuito de reunir em uma só página informações
 - Javascript
 - Fontes do Google
 - Figma (para construção do layout)
-- Bootstrap
 
 ## Mais informações
 - #### Link para acesso - https://nathgit198.github.io/Nathalya/
