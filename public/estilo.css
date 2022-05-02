@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -22,14 +24,13 @@ a {
     color: #000;
 }
 
-h1 {
+/*h1 {
     font-size: 20px;
 }
-
-h1,
+ h1,
 h2 {
     margin: 1rem 0;
-}
+} */
 
 span {
     text-align: center;
@@ -46,6 +47,10 @@ span {
 .quem-sou,
 .bem-vindo>section:nth-child(1) {
     margin: 0 0.8rem;
+}
+
+.titulo {
+    font-family: 'Rufina', sans-serif;
 }
 
 /* Scroll */
@@ -89,6 +94,19 @@ span {
     opacity: 1;
 }
 
+/* Atributos globais */
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: #ad84ab;
+    color: white;
+    border-radius: 1px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+/* Fim atributos globais */
 /* Header */
 header {
     background: #ffffff;
@@ -164,7 +182,17 @@ header {
     width: 100%;
 }
 
-.btnAcessar,
+.btnAcessar {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 2s;
+}
 .btnEnviar {
     width: 150px;
     height: 40px;
@@ -180,7 +208,9 @@ header {
 .btnAcessar:hover,
 .btnEnviar:hover {
     background: #947292;
+    border: 1px solid rgb(0, 0, 0, 0.2);
 }
+
 .btnAcessar:focus,
 .btnEnviar:focus {
     outline-style: none;
@@ -188,37 +218,67 @@ header {
 
 /* Seção minhas-informacoes */
 .minhas-informacoes {
-    display: flex;
-    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* gap: 2rem; */
+    align-items: center;
+    margin: 4rem 0;
 }
 
-.quem-sou,
-.formacao {
-    width: 30vw;
-    margin-top: 40px;
-    margin-left: 40px;
+.habilidades {
+    border: 2px solid black;
+    width: 350px;
+    height: 350px;
+    padding: 2rem;
+}
+
+.habilidades h2 {
     text-align: center;
+    font-size: 22px;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
 }
 
-#quemSou,
-#formacao {
-    padding-bottom: 20px;
-    cursor: pointer;
-    background: #805d6f;
-    padding: 15px;
-    color: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.sobre {
+    width: 500px;
+    height: auto;
+}
+.sobre h1 {
+    margin: 10px 0;
+}
+.estilo-sobre {
+    display: flex;
+    align-items: center;
+}
+hr {
+    width: 70px;
+    border: 1px solid black;
+    margin-right: 8px;
 }
 
-.texto {
-    display: none;
-    padding: 20px;
-    background: white;
+/* Barra de progresso */
+.progress-bar {
+    height: 8px;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 15px;
+    margin: 0.6rem 0;
 }
 
-.block {
-    display: block;
+.progress-bar .progress {
+    position: absolute;
+    height: 100%;
+    background-color: #000000;
+}
+.html, .css {
+    width: 80%;
+}
+.js, .bootstrap {
+    width: 40%;
+}
+.electron {
+    width: 50%;
 }
 
 /* Seção projetos */
@@ -226,53 +286,59 @@ header {
     margin: 1rem 0.8rem;
 }
 
-.projetos {
-    min-width: 100%;
-    scroll-snap-align: start;
-    background: #94848d;
-    color: white;
-    width: 100vw;
-    height: auto;
-    max-height: 70vh;
-    margin: 3rem 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.dica {
-    color: #e9e9e9;
+.projetos h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-/* Slider */
-.slide {
+.projeto-login,
+.projeto-mypizza,
+.projeto-mycalc {
     display: flex;
     align-items: center;
 }
-.mySlides {
-    display: none;
-    /* width: 1250px; */
-    height: 500px;
-    border-radius: 5px;
+
+.informacoes-projeto {
+    width: 50%;
+    background: #94848d;
+    color: white;
+    height: 480px;
+
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.mySlides:hover {
+.informacoes-projeto h2 {
+    margin: 1rem 0;
+}
+.img-login,
+.img-mypizza,
+.img-mycalc {
+    width: 50%;
+    object-fit: contain;
+    height: 480px;
+}
+.tecnologias {
+    display: flex;
+    gap: 1rem;
+}
+.tecnologias div {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+    margin-top: 1rem;
     cursor: pointer;
+    font-size: 14px;
 }
-.btn-slide img {
-    height: 50px;
-    margin: 0 1rem;
-    width: 50px;
-    opacity: 0.5;
-    cursor: pointer;
-}
-.login-test {
-    position: relative;
-}
-.login-img {
-    object-fit: cover;
-}
-.mySlides img {
-    width: 550px;
-    height: 500px;
+.tecnologias div:hover {
+    font-weight: 600;
 }
 
 /* Seção contato */

@@ -27,11 +27,6 @@
     <header id="header">
         <nav class="navegacao">
             <section class="menu">
-                <!-- Menu -->
-                <img class="toggle icon-menu" onclick="exibirMenu()" src="assets/icons/icon-menu.svg"
-                    alt="menu hamburguer de tres linhas" width="30" height="30">
-                <img class="toggle icon-close" onclick="ocultarMenu()" src="assets/icons/icon-close.svg"
-                    alt="icon em formato de X" width="30" height="30">
                 <ul class="grid">
                     <li><a class="link" href="index.html">Início</a></li>
                     <li><a class="link" href="#contato">Contato</a></li>
@@ -49,69 +44,133 @@
                 <h1>Bem vindo(a)</h1>
                 <p id="escrever"></p>
                 <p>Análise e desenvolvimento de sistemas</p>
-                <a href="https://github.com/nathgit198" target="_blank"><img src="assets/GitHub.svg"
+                <a href="https://github.com/nathgit198" target="_blank"><img src="assets/icons/GitHub.svg"
                         alt="Logo do github "></a>
                 <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
-                        src="assets/LinkedIn.svg" alt="Logo do linkedin"></a>
+                        src="assets/icons/LinkedIn.svg" alt="Logo do linkedin"></a>
                 <p>Email para contato: ns.contato21@gmail.com</p>
-                <a href="#quemSou"><button class="btnAcessar">Quem sou?</button></a>
-                <a href="#formacao"><button class="btnAcessar">Formação</button></a>
+                <a href="#quemSou"><button class="btn">Quem sou?</button></a>
+                <a href="#formacao"><button class="btn">Formação</button></a>
             </section>
 
             <section class="minha-foto">
                 <img src="assets/pictures/foto.svg" alt="">
-                <!--                 <img class="blobs1" src="assets/blobs1.svg" alt="blobs">
-                <img class="blobs2" src="assets/blobs2.svg" alt="blobs2">
-                <img class="blobs3" src="assets/blobs3.svg" alt="blobs3"> -->
             </section>
         </section>
 
         <section class="minhas-informacoes">
-            <section class="quem-sou">
-                <h1 id="quemSou">Quem sou?</h1>
+            <section class="habilidades">
+                <h2 class="titulo">Minhas habilidades</h2>
+                <p>HTML</p>
+                <section class="progress-bar">
+                    <section class="progress html"></section>
+                </section>
+
+                <p>CSS</p>
+                <section class="progress-bar">
+                    <section class="progress css"></section>
+                </section>
+
+                <p>Javascript</p>
+                <section class="progress-bar">
+                    <section class="progress js"></section>
+                </section>
+
+                <p>Bootstrap</p>
+                <section class="progress-bar">
+                    <section class="progress bootstrap"></section>
+                </section>
+
+                <p>Electron JS</p>
+                <section class="progress-bar">
+                    <section class="progress electron"></section>
+                </section>
+
+            </section>
+
+            <section class="sobre">
+                <section class="estilo-sobre">
+                    <hr>
+                    <p class="titulo-sobre">Sobre mim</p>
+                </section>
+                <h1 class="titulo" id="quemSou">Quem sou?</h1>
                 <p class="texto">
                     Sou uma pessoa bastante curiosa que gosta de desafios e com grande paixão por tecnologia. Gosto de
                     estudar sobre design e programação mais voltada para o front-end, porém também quero melhorar meus
                     conhecimentos voltados ao back-end. Meus conhecimentos são referentes às tecnologias HTML, CSS,
                     Javascript, PHP e Mysql.
                 </p>
-            </section>
-
-            <section class="formacao">
-                <h1 id="formacao">Formação</h1>
+                <h1 class="titulo" id="formacao">Formação</h1>
                 <p class="texto">
                     Atualmente estou cursando faculdade de Análise e desenvolvimento de sistemas e tenho curso Técnico
                     em informática com interesse em atuar na área de front-end ou back-end ou quem sabe os dois
                     fullstack.
                 </p>
+                <!-- <button class="btn mostrar-habilidades">Exibir habilidades</button> -->
             </section>
         </section>
 
         <section class="projetos">
-            <h1 id="projetos">Projetos</h1>
-            <section class="slide">
-                <section class="btn-slide" onclick="plusDivs(-1)"><img src="assets/icons/arrow-left.svg"
-                        alt="seta direcionada para a esquerda"></section>
-                <section class="meus-projetos">
-                    <section class="login mySlides">
-                        <button type="button">
-                            <img class="login-img" src="assets/pictures/login.png">
-                        </button>
+            <h1 class="titulo" id="projetos">Projetos</h1>
 
-                    </section>
-                    <section class="mySlides portfolio">
-                        <button type="button">
-                            <img class="portfolio-img" src="assets/pictures/Portfólio.svg" alt="Imagem da página de login - contendo um titulo com o 
-                        nome login e dois campos um de usuario e outro de senha logo abaixo tem um 
-                        link com o nome Lembrar senha e outro com o nome Mostrar/esconder senha...">
-                        </button>
-                    </section>
+            <section class="projeto-login">
+                <img class="img-login" src="assets/pictures/login.png" alt="">
+                <section class="informacoes-projeto">
+                    <h2>Página Login</h2>
+                    <p class="descricao-projeto">
+                        Esse projeto é mais visual não há um banco de dados para fazer as devidas requisições,
+                        porém essa funcionalidade será adicionada futuramente. <br />
+                        Projeto baseado em HTML, CSS e Javascript. Esse projeto está responsivo e com
+                        acessibilidade em libras.
+                    </p>
+                    <div class="tecnologias">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>Javascript</div>
+                    </div>
+                    <a href="https://nathgit198.github.io/LoginForm.github.io/" target="_blank"><button
+                            class="btnAcessar">Acessar</button></a>
                 </section>
-
-                <section class="btn-slide" onclick="plusDivs(1)"><img src="assets/icons/arrow-right.svg"
-                        alt="seta direcionada para a direita"></section>
             </section>
-            <span class="dica">Clique sobre a imagem para saber mais</span>
+
+            <section class="projeto-mypizza">
+                <section class="informacoes-projeto">
+                    <h2>Página MyPizza</h2>
+                    <p class="descricao-projeto">
+                        Projeto realizado em mais ou menos 3 horas e 30 min, esse projeto foi desenvolvido com o
+                        intuito de testar em quanto tempo seria possível desenvolver uma página simples e deixar
+                        totalmente responsivo com meus conhecimentos. As maiores dificuldades que tive durante a
+                        execução deste projeto foi na hora de pensar no design e desenvolve-lo no Figma, já na parte
+                        do código a responsividade foi um desafio.
+                    </p>
+                    <div class="tecnologias">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                    </div>
+                    <a href="https://nathgit198.github.io/Mypizza/" target="_blank"><button
+                            class="btnAcessar">Acessar</button></a>
+                </section>
+                <img class="img-mypizza" src="assets/pictures/Mypizza.png" alt="">
+            </section>
+
+            <section class="projeto-mycalc">
+                <img class="img-mycalc" src="assets/pictures/MyCalc.PNG" alt="">
+                <section class="informacoes-projeto">
+                    <h2>Página MyCalc</h2>
+                    <p class="descricao-projeto">
+                        Projeto aplicação Web de uma calculadora simples usando Electron JS com poucas funcionalidades.
+                    </p>
+                    <div class="tecnologias">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>Javascript</div>
+                        <div>Electron JS</div>
+                    </div>
+                    <a href="https://github.com/Nathgit198/MyCalc" target="_blank"><button class="btnAcessar">Acessar
+                            repositório</button></a>
+                </section>
+            </section>
+
         </section>
 
         <section class="contato">
@@ -138,6 +197,7 @@
                     <button class="btnEnviar" type="submit">Enviar</button>
                 </form>
             </section>
+
         </section>
 
         <section class="rodape">
@@ -147,17 +207,17 @@
                             alt="minha logo, com um N e S maiúsculo um ao lado do outro"></a>
                     <ul class="plataformas">
                         <li>
-                            <a href="https://github.com/nathgit198" target="_blank"><img src="assets/GitHub.svg"
+                            <a href="https://github.com/nathgit198" target="_blank"><img src="assets/icons/GitHub.svg"
                                     alt=""></a>
                             <p class="github-nome">nathgit198</p>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
-                                    src="assets/LinkedIn.svg" alt=""></a>
+                                    src="assets/icons/LinkedIn.svg" alt=""></a>
                             <p class="linkedin-nome">Nathálya</p>
                         </li>
                         <li>
-                            <a><img src="assets/Gmail.svg" alt=""></a>
+                            <a><img src="assets/icons/Gmail.svg" alt=""></a>
                             <p class="email-nome">ns.contato21@gmail.com</p>
                         </li>
                     </ul>

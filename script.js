@@ -48,14 +48,14 @@ function rodape(conteudos, el) {
 }
 rodape(texto);
 
-/*  */
+/*  
 const container = document.querySelectorAll('.minhas-informacoes section');
 container.forEach(element => element.addEventListener('click', () => exibirConteudo(element)))
 
 const exibirConteudo = (e) => {
     const conteudo = e.childNodes[3]
     conteudo.classList.toggle('block')
-}
+}*/
 
 /* Scroll top */
 const scrollTop = document.querySelector('[data-scroll-top]')
@@ -68,35 +68,3 @@ window.onscroll = () => {
         scrollTop.classList.remove('btn-scroll-visible')
     }
 }
-
-/* Slider */
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-/* IMG */
-/* function mostrarTexto() {
-    document.getElementById("test").innerHTML = "meu texto";
-    console.log(mostrarTexto)
-}
-function ocultarTexto() {
-    document.getElementById("test").innerHTML = "";
-} */
