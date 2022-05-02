@@ -106,24 +106,25 @@ span {
     margin-top: 1rem;
     cursor: pointer;
 }
+hr {
+    width: 100%;
+    border: 0.1px solid rgb(0, 0, 0, 0.3);
+}
 /* Fim atributos globais */
+
 /* Header */
 header {
     background: #ffffff;
 }
-
 .navegacao {
     margin: 0 auto;
-    max-width: 1250px;
     padding: 10px;
 }
-
 .link {
     display: inline-block;
     margin-block: 2px;
     position: relative;
 }
-
 .link::after {
     content: "";
     width: 100%;
@@ -137,19 +138,13 @@ header {
     transform-origin: left;
     transition: transform .25s ease;
 }
-
 .link:hover::after {
     transform: scaleX(1);
 }
-
 .grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.toggle {
-    display: none;
 }
 
 /* Container */
@@ -158,8 +153,8 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 1250px;
-    width: 100%;
+/*     max-width: 1250px;
+    width: 100%; */
     margin: 0 auto;
 }
 
@@ -178,8 +173,8 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 3rem 0;
-    max-width: 1250px;
-    width: 100%;
+/*     max-width: 1250px;
+    width: 100%; */
 }
 
 .btnAcessar {
@@ -251,7 +246,7 @@ header {
     display: flex;
     align-items: center;
 }
-hr {
+hr:nth-child(1) {
     width: 70px;
     border: 1px solid black;
     margin-right: 8px;
@@ -393,8 +388,8 @@ textarea:focus {
 /* Rodapé */
 .rodape-informacoes {
     background: #94848d;
-    width: 100%;
-    max-width: 1250px;
+/*     width: 100%;
+    max-width: 1250px; */
     display: flex;
     margin: 0 auto;
     gap: 2rem;

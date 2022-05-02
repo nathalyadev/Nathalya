@@ -1,20 +1,65 @@
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 280px) {}
 
-}
+@media only screen and (min-width: 320px) {}
+
+@media only screen and (min-width: 360px) {}
+
 /* Mobile */
 @media only screen and (max-width: 600px) {
+    .navegacao {}
 
+    .grid {}
 }
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
+    .conteudo {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .bem-vindo,
+    .minhas-informacoes, .contato {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .minhas-informacoes {
+        margin: 0 auto;
+    }
+    .descricao-projeto {
+        font-size: 14px;
+    }
+    .contato {
+        gap: 0;
+    }
+    .contato, .sobre {
+        margin: 3rem 0;
+    }
+    .rodape-informacoes {
+
+    }
 }
 
 /* Laptop */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (min-width: 1024px) {
+    .navegacao {
+        max-width: 1250px;
+
+    }
 }
 
 /* Large Screen */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {}
 
-}
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 2560px) {}
