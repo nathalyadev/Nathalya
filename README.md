@@ -3,7 +3,7 @@
 Este projeto foi criado com o intuito de reunir em uma só página informações e projetos que foram desenvolvidos para melhorar meus conhecimentos de design, HTML, CSS e Javascript.
 
 ## Layout do projeto
-![portfolio](https://user-images.githubusercontent.com/83317033/164793706-264435a7-cf77-4c24-9855-f5925516448c.png)
+![nathgit198 github io_Nathalya_](https://user-images.githubusercontent.com/83317033/166175648-7f4d9012-87d1-43a2-bee4-3b679724fb23.png)
 
 ## Tecnologias utilizadas
 - HTML
