@@ -1,65 +1,125 @@
-@media only screen and (min-width: 280px) {}
-
-@media only screen and (min-width: 320px) {}
-
-@media only screen and (min-width: 360px) {}
-
-/* Mobile */
-@media only screen and (max-width: 600px) {
-    .navegacao {}
-
-    .grid {}
-}
-
-/* Tablet */
-@media only screen and (max-width: 768px) {
-    .conteudo {
+@media only screen and (min-width: 425px) {
+    .img-mypizza, .img-mycalc {
+        height: auto;
         width: 100%;
-        max-width: 768px;
-    }
-
-    .grid {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .bem-vindo,
-    .minhas-informacoes, .contato {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .minhas-informacoes {
+        max-width: 550px;
         margin: 0 auto;
+        display: flex;
     }
-    .descricao-projeto {
-        font-size: 14px;
-    }
-    .contato {
-        gap: 0;
-    }
-    .contato, .sobre {
-        margin: 3rem 0;
-    }
-    .rodape-informacoes {
 
-    }
 }
-
-/* Laptop */
-@media only screen and (max-width: 992px) {}
 
 @media only screen and (min-width: 1024px) {
-    .navegacao {
-        max-width: 1250px;
+    .img-mobile {
+        display: none;
+    }
+    .img-desktop {
+        display: block;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 3rem;
+    }
+    .bem-vindo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+    .bem-vindo section {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 350px;
+        display: block;
+    }
+    .minhas-informacoes {
+        gap: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    .habilidades {
+        width: 100%;
+    }
+    .projeto-login, .projeto-mypizza, .projeto-mycalc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-login, .img-mypizza, .img-mycalc {
+        width: 50%;
+        object-fit: contain;
+        height: 480px;
+    }
+    .informacoes-projeto {
+        width: 50%;
+        height: 480px;
 
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        gap: 1rem;
     }
 }
 
 /* Large Screen */
-@media only screen and (max-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    .btn-scroll-top {
+        top: 93%;
+    }
+}
 
 @media only screen and (min-width: 1400px) {}
 
-@media only screen and (min-width: 2560px) {}
+@media only screen and (min-width: 2560px) {
+    body, .links-rodape, .plataformas {
+        font-size: 18px;
+    }
+    span, div {
+        font-size: 16px;
+    }
+    .contato {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .minhas-informacoes {
+        gap: 5rem;
+        justify-content: center;
+    }
+    .habilidades {
+        max-width: 550px;
+        width: 420px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sobre {
+        max-width: 550px;
+        width: 100%;
+    }
+    .links {
+        margin: 0 2rem;
+    }
+    .rodape {
+        height: auto;
+        padding: 1rem 0;
+    }
+}

@@ -13,7 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="public/estilo.css">
+    <link rel="stylesheet" href="public/refatoracao.css">
+    <!--     <link rel="stylesheet" href="public/estilo.css">-->
     <link rel="stylesheet" href="public/estilo-responsivo.css">
 </head>
 
@@ -37,6 +38,7 @@
             </section>
         </nav>
     </header>
+
     <main class="conteudo">
 
         <section class="bem-vindo">
@@ -49,12 +51,12 @@
                 <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
                         src="assets/icons/LinkedIn.svg" alt="Logo do linkedin"></a>
                 <p>Email para contato: ns.contato21@gmail.com</p>
-                <a href="#quemSou"><button class="btn">Quem sou?</button></a>
-                <a href="#formacao"><button class="btn">Formação</button></a>
+                <a href="#quemSou"><button class="btnQuemSou">Quem sou?</button></a>
             </section>
 
             <section class="minha-foto">
-                <img src="assets/pictures/foto.svg" alt="">
+                <img class="img-desktop" src="assets/pictures/foto.svg" alt="">
+                <img class="img-mobile" src="assets/pictures/foto.jpg" alt="">
             </section>
         </section>
 
@@ -106,13 +108,11 @@
                     em informática com interesse em atuar na área de front-end ou back-end ou quem sabe os dois
                     fullstack.
                 </p>
-                <!-- <button class="btn mostrar-habilidades">Exibir habilidades</button> -->
             </section>
         </section>
 
         <section class="projetos">
             <h1 class="titulo" id="projetos">Projetos</h1>
-
             <section class="projeto-login">
                 <img class="img-login" src="assets/pictures/login.png" alt="">
                 <section class="informacoes-projeto">
@@ -170,18 +170,15 @@
                             repositório</button></a>
                 </section>
             </section>
-
         </section>
 
         <section class="contato">
-
             <section>
                 <h1>Entre em Contato</h1>
                 <p>Caso queira enviar uma mensagem preencha o formulário ao lado. <br>
                     Está precisando de um site para o seu negocio envie uma proposta preenchendo o formulário.
                 </p>
             </section>
-
             <section class="formulario">
                 <h1>Formulário de Contato</h1>
                 <form class="contato-form" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013"
@@ -193,11 +190,9 @@
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"
                         required></textarea>
-                    <!-- <input type="text" name="mensagem" id="mensagem" required> -->
                     <button class="btnEnviar" type="submit">Enviar</button>
                 </form>
             </section>
-
         </section>
 
         <section class="rodape">
