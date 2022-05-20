@@ -1,32 +1,56 @@
 @media only screen and (min-width: 425px) {
     .img-mypizza, .img-mycalc {
         height: auto;
-        width: 100%;
+        width: 60%;
         max-width: 550px;
         margin: 0 auto;
         display: flex;
     }
-
+    .rodape-informacoes {
+        flex-direction: row;
+    }
+    .informacoes {
+        align-items: flex-start;
+    }
+    .links {
+        margin: 0 1rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    section.linksUteis {
+        margin: 0;
+    }
+    .bem-vindo p {
+        text-align: start;
+    }
     .img-mobile {
         display: none;
     }
     .img-desktop {
         display: block;
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+        border: 3px solid #805d6f;
     }
     .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
+        display: flex;
+        flex-direction: row;
         gap: 3rem;
     }
-    .bem-vindo {
+/*     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: space-between;
         align-items: center;
+        gap: 3rem;
+    } */
+    .bem-vindo {
+        display: flex;
+        align-items: center;
+        gap: 0;
         margin: 0 auto;
         padding: 3rem 0;
     }
@@ -86,7 +110,11 @@
     }
 }
 
-@media only screen and (min-width: 1400px) {}
+@media only screen and (min-width: 1400px) {
+    .links {
+        margin: 0 30px;
+    }
+}
 
 @media only screen and (min-width: 2560px) {
     body, .links-rodape, .plataformas {
