@@ -57,14 +57,3 @@ const exibirConteudo = (e) => {
     conteudo.classList.toggle('block')
 }*/
 
-/* Scroll top */
-const scrollTop = document.querySelector('[data-scroll-top]')
-
-window.onscroll = () => {
-
-    if(window.scrollY > 200) {
-        scrollTop.classList.add('btn-scroll-visible')
-    } else {
-        scrollTop.classList.remove('btn-scroll-visible')
-    }
-}

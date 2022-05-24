@@ -66,6 +66,22 @@ a {
     visibility: visible;
     opacity: 1;
 }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Thanks page */
+.agradecimento {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 1rem;
+}
+
 
 /* Mobile first */
 header {
