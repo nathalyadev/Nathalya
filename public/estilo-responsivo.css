@@ -15,9 +15,21 @@
     .links {
         margin: 0 1rem;
     }
+    .habilidades {
+        width: 350px;
+    }
+    .sobre {
+        width: 350px;
+    }
+    .minhas-informacoes {
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    .habilidades, .sobre {
+        width: 400px;
+    }
     section.linksUteis {
         margin: 0;
     }
@@ -63,12 +75,10 @@
     .minhas-informacoes {
         gap: 3rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding: 3rem 0;
-    }
-    .habilidades {
-        width: 100%;
+        /* padding: 3rem 0; */
     }
     .projeto-login, .projeto-mypizza, .projeto-mycalc {
         display: flex;
@@ -107,6 +117,15 @@
     }
     .btn-scroll-top {
         top: 93%;
+    }
+    .texto {
+        width: 550px;
+    }
+    .habilidades, .sobre {
+        width: 400px;
+    }
+    .minhas-informacoes {
+        justify-content: center;
     }
 }
 

@@ -87,6 +87,7 @@ a {
 header {
     background: #ffffff;
     display: flex;
+    width: 100vw;
 }
 .navegacao {
     margin: 0 auto;
@@ -212,12 +213,18 @@ section.linksUteis {
 
 .minhas-informacoes {
     width: 80%;
+    padding: 5rem 0;
+    display: flex;
     margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
 }
 .habilidades {
     border: 2px solid black;
     padding: 2rem;
+   /*  width: 450px;  */
 }
+
 .habilidades h2 {
     text-align: center;
     font-size: 22px;
