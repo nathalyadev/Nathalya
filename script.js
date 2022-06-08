@@ -1,10 +1,14 @@
 /* Exibir e ocultar menu */
-function exibirMenu() {
-    document.querySelector(".menu").style.display = "block";
+function menu() {
+    var menuLua = document.querySelector('.darkmodeTheme');
+
+    if (menuLua.style.display === 'none') {
+        menuLua.style.display = 'block'
+    } else {
+        menuLua.style.display = 'none'
+    }
 }
-function ocultarMenu() {
-    document.querySelector(".menu").style.display = "none";
-}
+
 
 /* Escrever texto */
 var recebeTexto = document.getElementById("escrever")
@@ -48,12 +52,56 @@ function rodape(conteudos, el) {
 }
 rodape(texto);
 
-/*  
-const container = document.querySelectorAll('.minhas-informacoes section');
-container.forEach(element => element.addEventListener('click', () => exibirConteudo(element)))
 
-const exibirConteudo = (e) => {
-    const conteudo = e.childNodes[3]
-    conteudo.classList.toggle('block')
-}*/
+/* Dark mode e light mode */
+const html = document.querySelector("html");
+const checkbox = document.getElementById('checkbox');
+
+const getStyle = (element, style) => 
+  window.getComputedStyle(element)
+  .getPropertyValue(style);
+
+const lightmode = {
+    backgroundColor: getStyle(html, "--background-color"),
+    colorMain: getStyle(html, "--color-main"),
+    white: getStyle(html, "--white"),
+    black: getStyle(html, "--black"),
+    headerColor: getStyle(html, "--header-color"),
+    transparent: getStyle(html, "--transparent"),
+    colorForm: getStyle(html, "--color-form"),
+    btnDarkmode: getStyle(html, "--btn-darkmode"),
+/*     colorIcons: getStyle(html, "--color-icons"), */
+
+    headerText: getStyle(html, "--header-text"),
+    colorProjects: getStyle(html, "--color-projects"),
+    textForm: getStyle(html, "--text-form")
+}
+
+const darkmode = {
+    backgroundColor: '#151515',
+    colorMain: '#1f1f1f',
+    black: '#fff',
+    headerColor: '#0D0D0D',
+    transparent: '#333333',
+    colorForm: '#0D0D0D',
+    btnDarkmode: '#333333',
+/*     colorIcons: '#fff', */
+    
+    headerText: '#fff',
+    colorProjects: '#0D0D0D',
+    textForm: '#fff',
+
+}
+
+const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
+
+const changeColors = (colors) => {
+  Object.keys(colors).map(key =>
+    html.style.setProperty(transformKey(key), colors[key])
+    )
+}
+
+checkbox.addEventListener('change', ({target}) => {
+  target.checked ? changeColors(darkmode) : changeColors(lightmode)
+});
 

@@ -7,29 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathálya Lima</title>
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
-    
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
+        
     <!-- CSS -->
     <link rel="stylesheet" href="public/estilo.css">
     <link rel="stylesheet" href="public/estilo-responsivo.css">
 </head>
 
 <body id="top">
-
-    <section class="btn-scroll-top" data-scroll-top>
-        <a href="#top"><img class="scroll-top-img" src="assets/icons/arrow-top.svg"
-                alt="Botão seta virada para cima"></a>
-    </section>
-
+    
     <header id="header">
+        <section class="menu-opcoes">
+<!--                 <section class="menuList" onclick="menu()">
+                <i class="bi bi-list"></i>
+            </section> -->
+            <section class="darkmodeTheme">
+                <input type="checkbox" class="darkmode" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="bi bi-sun"></i>
+                    <i class="bi bi-moon-stars"></i>
+                    <section class="ball"></section>
+                </label>
+            </section>
+        </section>
         <nav class="navegacao">
             <section class="menu">
-                <a class="logo" href="index.html"><img src="assets/logo.svg" alt=""></a>
+                <a class="logo" href="index.html"><span>NS</span></a>
                 <ul class="grid">
                     <li><a class="link" href="index.html">Início</a></li>
                     <li><a class="link" href="#contato">Contato</a></li>
@@ -39,7 +50,6 @@
             </section>
         </nav>
     </header>
-
     <main class="conteudo">
 
         <section class="bem-vindo">
@@ -48,10 +58,12 @@
                 <p id="escrever"></p>
                 <p>Análise e desenvolvimento de sistemas</p>
                 <section class="linksUteis">
-                    <a href="https://github.com/nathgit198" target="_blank"><img src="assets/icons/GitHub.svg"
-                            alt="Logo do github "></a>
-                    <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
-                            src="assets/icons/LinkedIn.svg" alt="Logo do linkedin"></a>
+                    <a href="https://github.com/nathgit198" target="_blank">
+                        <i class="bi bi-github"></i>
+                        </a>
+                    <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        </a>
                 </section>
                 <p>Email para contato: ns.contato21@gmail.com</p>
                 <a href="#quemSou"><button class="btnQuemSou">Quem sou?</button></a>
@@ -201,21 +213,20 @@
         <section class="rodape">
             <section class="rodape-informacoes">
                 <section class="informacoes">
-                    <a href="index.html"><img class="logo" src="assets/logo.svg"
-                            alt="minha logo, com um N e S maiúsculo um ao lado do outro"></a>
+                    <a href="index.html" class="logo"><span>NS</span></a>
                     <ul class="plataformas">
                         <li>
-                            <a href="https://github.com/nathgit198" target="_blank"><img src="assets/icons/GitHub.svg"
-                                    alt=""></a>
+                            <a href="https://github.com/nathgit198" target="_blank"><i class="bi bi-github"></i></a>
                             <p class="github-nome">nathgit198</p>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank"><img
-                                    src="assets/icons/LinkedIn.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                                </a>
                             <p class="linkedin-nome">Nathálya</p>
                         </li>
                         <li>
-                            <a><img src="assets/icons/Gmail.svg" alt=""></a>
+                            <a><i class="bi bi-envelope"></i></a>
                             <p class="email-nome">ns.contato21@gmail.com</p>
                         </li>
                     </ul>

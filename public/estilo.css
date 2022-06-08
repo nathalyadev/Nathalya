@@ -1,4 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+
+html {
+    --white: #fff;
+    --black: #000000;
+    --background-color: #f7f7f7;
+    --color-main: #805d6f;
+    --color-scroll: #805d6f;
+    --background-scroll: #f4f4f4;
+    --menu-color: #dfdfdf;
+    --color-btn: #ad84ab;
+    --color-secondary: #94848d;
+    --header-color: #fff;
+    --transparent: transparent;
+    --color-form: #fff;
+    --btn-darkmode: #fff;
+    --color-icons: #000000;
+
+    --header-text: #000;
+    --color-projects: #fff;
+    --text-form: #000000;
+}
+
 
 * {
     padding: 0;
@@ -13,7 +36,8 @@ body {
 }
 
 body {
-    background: #f7f7f7;
+    background: var(--background-color);
+    color: var(--black);
     font-family: "Roboto", sans-serif;
     overflow: overlay;
     font-size: 14px;
@@ -23,26 +47,64 @@ li,
 a {
     list-style: none;
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
+
+
+/* Botao de darkmode */
+.darkmode {
+    opacity: 0;
+    position: absolute;
+    /* top: 12px; */
+    width: 60px;
+}
+
+.darkmode:checked + .label .ball {
+    transform: translateX(-25px);
+}
+
+.label {
+    background: var(--btn-darkmode);
+    box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    height: 30px;
+    width: 60px;
+    position: relative;
+    padding: 6px;
+}
+
+.ball {
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+    width: 27px;
+    height: 24px;
+    position: absolute;
+    right: 3px;
+    transition: transform 0.2s linear;
+}
+
 
 /* Scroll */
 ::-webkit-scrollbar-track {
-    background-color: #f4f4f4;
+    background-color: var(--background-scroll);
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: #f4f4f4;
+    background: var(--background-scroll);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #805d6f;
+    background: var(--color-scroll);
 }
 
 /* Scroll Top */
 .btn-scroll-top {
-    border: 2px solid #000;
+    border: 2px solid var(--black);
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
@@ -55,17 +117,43 @@ a {
     display: flex;
     align-items: center;
 }
-
 .scroll-top-img {
     width: 50%;
     /* margin-top: 35%; */
     margin-left: 25%;
 }
-
 .btn-scroll-visible {
     visibility: visible;
     opacity: 1;
 }
+
+
+.menu-opcoes {
+    position: fixed;
+    right: 1%;
+/*     
+    top: 50%; 
+    background: var(--menu-color);
+*/
+    padding: 1rem;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.lua {
+    display: none;
+}
+.menuList {
+    cursor: pointer;
+    padding: 14px;
+}
+.bi-list {
+    font-size: 2em;
+}
+
+
 .center {
     display: flex;
     justify-content: center;
@@ -83,11 +171,24 @@ a {
 }
 
 
+i.bi-github, i.bi-linkedin, i.bi-envelope {
+    font-size: 2em;
+}
+
+
 /* Mobile first */
+.logo span {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 32px;
+    font-weight: 700;
+}
 header {
-    background: #ffffff;
+    background: var(--header-color);
     display: flex;
     width: 100vw;
+
+    position: fixed;
+    z-index: 1;
 }
 .navegacao {
     margin: 0 auto;
@@ -102,7 +203,7 @@ header {
     content: "";
     width: 100%;
     height: 3px;
-    background: #805d6f;
+    background: var(--color-main);
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -124,6 +225,9 @@ header {
     width: 100%;
     justify-content: center;
 }
+.grid li > a {
+    color: var(--header-text);
+}
 /* .grid {
     display: flex;
     flex-direction: column;
@@ -137,8 +241,8 @@ header {
     height: 40px;
     font-size: 16px;
     border: none;
-    background: #ad84ab;
-    color: white;
+    background: var(--color-btn);
+    color: var(--white);
     border-radius: 1px;
     margin-top: 1rem;
     cursor: pointer;
@@ -148,7 +252,7 @@ header {
     height: 40px;
     font-size: 16px;
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 5px;
     margin-top: 1rem;
     cursor: pointer;
@@ -159,7 +263,7 @@ header {
     height: 40px;
     font-size: 16px;
     border: none;
-    background: #ad84ab;
+    background: var(--color-btn);
     border-radius: 5px;
     margin-top: 1rem;
     cursor: pointer;
@@ -183,6 +287,7 @@ header {
     flex-wrap: wrap;
     width: 100%;
     font-size: 14px;
+    padding-top: 14rem;
 }
 .bem-vindo section {
     width: 80%;
@@ -202,7 +307,7 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 3px solid #805d6f;
+    border: 3px solid var(--color-main);
     object-fit: cover;
 }
 section.linksUteis {
@@ -220,7 +325,8 @@ section.linksUteis {
     flex-direction: column;
 }
 .habilidades {
-    border: 2px solid black;
+    background: var(--transparent);
+    border: 2px solid var(--black);
     padding: 2rem;
    /*  width: 450px;  */
 }
@@ -234,7 +340,7 @@ section.linksUteis {
 /* Barra de progresso */
 .progress-bar {
     height: 8px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     position: relative;
     border-radius: 15px;
     margin: 0.6rem 0;
@@ -242,7 +348,7 @@ section.linksUteis {
 .progress-bar .progress {
     position: absolute;
     height: 100%;
-    background-color: #000000;
+    background-color: var(--black);
 }
 .html, .css {
     width: 80%;
@@ -261,7 +367,7 @@ section.linksUteis {
 }
 hr:nth-child(1) {
     width: 70px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     margin-right: 8px;
 }
 .sobre h1 {
@@ -287,7 +393,7 @@ hr:nth-child(1) {
     justify-content: center;
 }
 .tecnologias div {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 20px;
     padding: 8px;
     width: 100px;
@@ -303,8 +409,8 @@ hr:nth-child(1) {
 }
 .informacoes-projeto {
     text-align: center;
-    background: #94848d;
-    color: white;
+    background: var(--color-secondary);
+    color: var(--color-projects);
     padding: 1.5rem;
 }
 .informacoes-projeto h2 {
@@ -320,7 +426,8 @@ hr:nth-child(1) {
 .formulario {
     padding: 20px;
     margin: 3rem 0;
-    background: white;
+    background: var(--color-form);
+    color: var(--text-form);
 }
 .formulario h1 {
     text-align: center;
@@ -334,8 +441,8 @@ textarea {
     padding: 8px 8px;
     margin: 16px 0;
     border: none;
-    border-bottom: 2px solid #94848d;
-    /* background: #94848d; */
+    border-bottom: 4px solid var(--color-secondary);
+    background: transparent;
     font-size: 14px;
     resize: none;
 }
@@ -349,20 +456,22 @@ textarea:focus {
 
 
 .rodape {
-    background: #94848d;
+    background: var(--color-secondary);
     color: #0f0d0e;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
 .rodape-informacoes {
-    background: #94848d;
+    background: var(--color-secondary);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
     font-size: 14px;
     width: 80%;
+    height: auto;
+    padding: 10px;
 }
 .informacoes {
     display: flex;
@@ -370,13 +479,15 @@ textarea:focus {
     align-items: center;
 }
 span {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     width: 80%;
     margin: 0 auto;
+    color: var(--black);
 }
 .links h2 {
     font-family: "Rufina", sans-serif;
+    color: var(--black);
 }
 .links {
     position: relative;
