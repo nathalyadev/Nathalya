@@ -300,15 +300,16 @@ header {
 .bem-vindo p {
     text-align: center;
 }
-.img-desktop {
+.img-desktop, .img-desktop-thanks {
     display: none;
 }
-.img-mobile {
+.img-mobile, .img-mobile-thanks {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: 3px solid var(--color-main);
     object-fit: cover;
+    margin-top: 15rem;
 }
 section.linksUteis {
     display: inline-flex;

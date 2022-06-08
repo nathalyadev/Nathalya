@@ -36,16 +36,19 @@
     .bem-vindo p {
         text-align: start;
     }
-    .img-mobile {
+    .img-mobile, .img-mobile-thanks {
         display: none;
     }
-    .img-desktop {
+    .img-desktop, .img-desktop-thanks {
         display: block;
         width: 350px;
         height: 400px;
         object-fit: cover;
         object-position: top;
         border: 3px solid #805d6f;
+    }
+    .img-desktop-thanks {
+        margin-top: 8rem;
     }
     .grid {
         display: flex;
