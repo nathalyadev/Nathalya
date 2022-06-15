@@ -334,6 +334,9 @@ header {
 .bem-vindo p {
     text-align: center;
 }
+.img-desktop {
+    height: auto;
+}
 .img-desktop, .img-desktop-thanks {
     display: none;
 }
