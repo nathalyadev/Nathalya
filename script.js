@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
     loader.style.display = "none"
     document.body.style.overflow = "unset";
 })
+/* Fim */
 
 
 /* Exibir e ocultar menu */
@@ -16,6 +17,7 @@ function menu() {
         menuLua.style.display = 'none'
     }
 }
+/* Fim */
 
 
 /* Escrever texto */
@@ -49,17 +51,17 @@ function limpar(done) {
 function rodape(conteudos, el) {
     var atual = -1;
 	function prox(cb){
-		if (atual < conteudos.length - 1) atual++;
+        if (atual < conteudos.length - 1) atual++;
 		else atual = 0;
 		var str = conteudos[atual];
 		escreverTexto(str, function(){
-			limpar(prox);
+            limpar(prox);
 		});
 	}
 	prox(prox);
 }
 rodape(texto);
-
+/* Fim */
 
 /* Dark mode e light mode */
 const html = document.querySelector("html");

@@ -187,7 +187,15 @@ a {
     font-size: 2em;
 }
 
-
+.btnProjetos {
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    margin: 0 0.1rem;
+}
 .center {
     display: flex;
     justify-content: center;
@@ -418,6 +426,7 @@ hr:nth-child(1) {
     margin: 0 auto;
     padding: 1rem 0;
 }
+/* 
 .img-login,
 .img-mypizza,
 .img-mycalc {
@@ -453,13 +462,18 @@ hr:nth-child(1) {
 }
 .informacoes-projeto h2 {
     margin: 1rem 0;
-}
+} */
 
 
+/* Contact Page */
 .contato {
     width: 80%;
     margin: 0 auto;
     padding: 1rem 0;
+}
+.info-contato {
+    margin-top: 7rem;
+    text-align: center;
 }
 .formulario {
     padding: 20px;

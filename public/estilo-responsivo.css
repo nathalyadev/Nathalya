@@ -1,45 +1,52 @@
 @media only screen and (min-width: 425px) {
-    .img-mypizza, .img-mycalc {
-        height: auto;
-        width: 60%;
-        max-width: 550px;
-        margin: 0 auto;
-        display: flex;
-    }
+
     .rodape-informacoes {
         flex-direction: row;
     }
+
     .informacoes {
         align-items: flex-start;
     }
+
     .links {
         margin: 0 1rem;
     }
+
     .habilidades {
         width: 350px;
     }
+
     .sobre {
         width: 350px;
     }
+
     .minhas-informacoes {
         justify-content: center;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .habilidades, .sobre {
+
+    .habilidades,
+    .sobre {
         width: 400px;
     }
+
     section.linksUteis {
         margin: 0;
     }
+
     .bem-vindo p {
         text-align: start;
     }
-    .img-mobile, .img-mobile-thanks {
+
+    .img-mobile,
+    .img-mobile-thanks {
         display: none;
     }
-    .img-desktop, .img-desktop-thanks {
+
+    .img-desktop,
+    .img-desktop-thanks {
         display: block;
         width: 350px;
         height: 400px;
@@ -47,21 +54,17 @@
         object-position: top;
         border: 3px solid #805d6f;
     }
+
     .img-desktop-thanks {
         margin-top: 8rem;
     }
+
     .grid {
         display: flex;
         flex-direction: row;
         gap: 3rem;
     }
-/*     .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-items: space-between;
-        align-items: center;
-        gap: 3rem;
-    } */
+
     .bem-vindo {
         display: flex;
         align-items: center;
@@ -69,12 +72,14 @@
         margin: 0 auto;
         padding: 9rem 0;
     }
+
     .bem-vindo section {
         flex-wrap: wrap;
         flex-direction: row;
         max-width: 350px;
         display: block;
     }
+
     .minhas-informacoes {
         gap: 3rem;
         display: flex;
@@ -83,19 +88,38 @@
         align-items: center;
         /* padding: 3rem 0; */
     }
-    .projeto-login, .projeto-mypizza, .projeto-mycalc {
+
+    .img-login img,
+    .img-mycalc img {
+        width: 250px;
+        object-fit: cover;
+        height: 250px;
+    }
+    
+    .img-mypizza img {
+        object-fit: cover;
+        max-width: 550px;
+        width: auto;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .projeto-login, .projeto-mypizza, .projeto-mycalc{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
-    }
-    .img-login, .img-mypizza, .img-mycalc {
-        width: 50%;
-        object-fit: contain;
-        height: 480px;
+        margin: 0 auto;
     }
     .informacoes-projeto {
-        width: 50%;
-        height: 480px;
+        max-width: 430px;
+        width: auto;
+        max-height: 250px;
+    }    
+    /* 
+
+    .informacoes-projeto {
+        width: 90%;
+        height: auto;
 
         display: flex;
         flex-wrap: wrap;
@@ -103,11 +127,47 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    } */
+
+/* 
+    .projetos-container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
     }
+
+    .projetos-nome {
+        width: 25vw;
+        height: 100%;
+        background: gray;
+    }
+
+    .projeto {
+        font-size: 25px;
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .projeto-mypizza, .projeto-mycalc {
+        display: none;
+    }
+    .login,
+    .mypizza,
+    .mycalc {
+    }
+    .login:hover,
+    .mypizza:hover,
+    .mycalc:hover {
+        cursor: pointer;
+        background: blue;
+    } */
+
     .contato {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
         margin: 0 auto;
         gap: 1rem;
     }
@@ -118,15 +178,20 @@
     body {
         font-size: 16px;
     }
+
     .btn-scroll-top {
         top: 93%;
     }
+
     .texto {
         width: 550px;
     }
-    .habilidades, .sobre {
+
+    .habilidades,
+    .sobre {
         width: 400px;
     }
+
     .minhas-informacoes {
         justify-content: center;
     }
@@ -139,20 +204,28 @@
 }
 
 @media only screen and (min-width: 2560px) {
-    body, .links-rodape, .plataformas {
+
+    body,
+    .links-rodape,
+    .plataformas {
         font-size: 18px;
     }
-    span, div {
+
+    span,
+    div {
         font-size: 16px;
     }
+
     .contato {
         gap: 0;
         justify-content: space-evenly;
     }
+
     .minhas-informacoes {
         gap: 5rem;
         justify-content: center;
     }
+
     .habilidades {
         max-width: 550px;
         width: 420px;
@@ -161,13 +234,16 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .sobre {
         max-width: 550px;
         width: 100%;
     }
+
     .links {
         margin: 0 2rem;
     }
+
     .rodape {
         height: auto;
         padding: 1rem 0;
