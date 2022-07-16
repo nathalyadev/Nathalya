@@ -1,13 +1,13 @@
-/* Preloader */
+/* /* Preloader */
 var loader = document.getElementById("preloader")
 window.addEventListener("load", function() {
     loader.style.display = "none"
     document.body.style.overflow = "unset";
 })
-/* Fim */
+/* Fim 
 
 
-/* Exibir e ocultar menu */
+/* Exibir e ocultar menu 
 function menu() {
     var menuLua = document.querySelector('.darkmodeTheme');
 
@@ -17,12 +17,12 @@ function menu() {
         menuLua.style.display = 'none'
     }
 }
-/* Fim */
+/* Fim 
 
 
-/* Escrever texto */
+/* Escrever texto 
 var recebeTexto = document.getElementById("escrever")
-var texto = ['Olá meu nome é Nathálya', 'Em busca de oportunidade'];
+var texto = ['Olá, meu nome é Nathálya'];
 
 function escreverTexto(str, done) {
     var letras = str.split('').reverse();
@@ -61,4 +61,15 @@ function rodape(conteudos, el) {
 	prox(prox);
 }
 rodape(texto);
-/* Fim */
+/* Fim  */
+
+
+/* Botão para exibir mais projetos */
+var ticTacToe = document.getElementById('tic-tac-toe');
+function exibirMais() {
+    if (ticTacToe.style.display === 'none') {
+        ticTacToe.style.display = 'block'
+    } else {
+        ticTacToe.style.display = 'none'
+    }
+}
