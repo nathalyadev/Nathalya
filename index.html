@@ -17,19 +17,18 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="public/estilo-refatorado.css">
-    <!-- CSS 
-    <link rel="stylesheet" href="public/estilo.css">
-    <link rel="stylesheet" href="public/estilo-responsivo.css">
--->
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/estilo-refatorado.css">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/header.css">
+
 </head>
 
 <body id="top">
 
-    <!-- Loader -->
-    <section id="preloader">
+<!--     <section id="preloader">
         <div class="loader"></div>
-    </section>
+    </section> -->
 
     <header id="header">
         <nav class="menu">
@@ -55,10 +54,10 @@
                     <p>Análise e desenvolvimento de sistemas</p>
                     <p class="emailNome">ns.contato21@gmail.com</p>
                     <section class="minhas-redes">
-                        <a href="https://github.com/nathgit198" target="_blank">
+                        <a class="icon" href="https://github.com/nathgit198" target="_blank">
                             <i class="bi bi-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank">
+                        <a class="icon" href="https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/" target="_blank">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </section>
@@ -152,17 +151,8 @@
                             repositório</button></a>
                 </section>
 
-                <section class="btnMostrarMais">
-                    <button id="btnExibir" onclick="exibirMais()">Mostrar Mais</button>
-                </section>
-
-                <section class="projeto-tic-tac-toe" id="tic-tac-toe">
-                    <img class="img-tic-tac-toe" src="assets/pictures/Tic-Tac-Toe.png" alt="">
-                    <h3>Tic Tac Toe</h3>
-                    <a href="projetos.html"><button class="btn">Saiba mais</button></a>
-                    <a href="https://nathgit198.github.io/Tic-Tac-Toe/" target="_blank"><button
-                            class="btn">Acessar</button></a>
-
+                <section class="btnExibirMais">
+                    <a href="projetos.html">Exibir mais</a>
                 </section>
 
             </section>
@@ -205,7 +195,7 @@
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>

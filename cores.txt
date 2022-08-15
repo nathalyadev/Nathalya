@@ -1,0 +1,21 @@
+html {
+    --white: #fff;
+    --black: #000000;
+    --background-color: #f7f7f7;
+    --color-main: #805d6f;
+    --color-scroll: #805d6f;
+    --background-scroll: #f4f4f4;
+    --menu-color: #dfdfdf;
+    --color-btn: #ad84ab;
+    --color-secondary: #94848d;
+    --header-color: #fff;
+    --transparent: transparent;
+    --color-form: #fff;
+    --btn-darkmode: #fff;
+    --color-icons: #000000;
+    --color-loader: #f3f3f3;
+
+    --header-text: #000;
+    --color-projects: #fff;
+    --text-form: #000000;
+}

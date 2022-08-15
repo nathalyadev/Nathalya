@@ -64,7 +64,7 @@ rodape(texto);
 /* Fim  */
 
 
-/* Botão para exibir mais projetos */
+/* Botão para exibir mais projetos 
 var ticTacToe = document.getElementById('tic-tac-toe');
 function exibirMais() {
     if (ticTacToe.style.display === 'none') {
@@ -72,4 +72,4 @@ function exibirMais() {
     } else {
         ticTacToe.style.display = 'none'
     }
-}
+}*/

@@ -1,7 +1,9 @@
 body {
     background-color: #f1f1f1;
 }
-
+.container {
+    padding-top: 5rem;
+}
 .projetosWeb {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,22 +19,26 @@ body {
 }
 h1 {
     text-align: center;
+    margin: 1rem;
 }
 h1::before {
+    content: "";
+    background: black;
+    width: 8%;
+    height: 2px;
+    position: absolute;
+    transform: translate(6px, 31px);
+}
+h1::after {
     content: "";
     background: black;
     width: 7%;
     height: 2px;
     position: absolute;
-    transform: translate(10px, 31px);
+    transform: translate(-107px, 40px);
 }
-h1::after {
-    content: "";
-    background: black;
-    width: 6%;
-    height: 2px;
-    position: absolute;
-    transform: translate(-96px, 40px);
+h3 {
+    margin: 1rem;
 }
 
 .projetosContainer {

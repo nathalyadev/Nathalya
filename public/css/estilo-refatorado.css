@@ -2,60 +2,6 @@ body {
     background: var(--background-color);
 }
 
-/* Header */
-header {
-    background: var(--header-color);
-    width: 100vw;
-
-    position: fixed;
-    z-index: 1;
-}
-
-nav {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 2rem;
-    box-shadow: 1px 4px 17px -7px rgba(0, 0, 0, 0.1);
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo span {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.link {
-    display: inline-block;
-    margin-block: 2px;
-    position: relative;
-}
-
-.link::after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    background: var(--color-main);
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .25s ease;
-}
-
-.link:hover::after {
-    transform: scaleX(1);
-}
-
-
 /*  */
 .sobre,
 .projetos {
@@ -83,16 +29,15 @@ nav {
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
 .bem-vindo::after {
     content: "";
     background: #dbdbdb;
     width: 100%;
     height: 100px;
     position: absolute;
-    transform: translate(32px, 376px);
+    transform: translate(0px, 376px);
 }
 
 .minha-foto img {
@@ -243,9 +188,14 @@ nav {
 .projeto-tic-tac-toe {
     text-align: center;
 }
-.btnMostrarMais {
+.btnExibirMais {
     grid-column: 2;
     margin: 2rem 0;
+    border: 1px solid #00000038;
+    border-radius: 5px;
+    padding: 0.3125rem;
+    background: #c87cd5;
+    border-bottom-left-radius: 0;
 }
 .projeto-tic-tac-toe {
     display: none;
