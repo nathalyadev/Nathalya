@@ -1,28 +1,20 @@
-/* /* Preloader */
-var loader = document.getElementById("preloader")
-window.addEventListener("load", function() {
-    loader.style.display = "none"
-    document.body.style.overflow = "unset";
+var closeBtn = document.querySelector(".closeBtn");
+var ocult = document.querySelector(".informationsProjects");
+
+closeBtn.addEventListener("click", function() {
+    ocult.style.display = "none";
 })
-/* Fim 
 
+var showSection = document.getElementById("showSection");
 
-/* Exibir e ocultar menu 
-function menu() {
-    var menuLua = document.querySelector('.darkmodeTheme');
+showSection.addEventListener("click", function() {
+    ocult.style.display = "block";
 
-    if (menuLua.style.display === 'none') {
-        menuLua.style.display = 'block'
-    } else {
-        menuLua.style.display = 'none'
-    }
-}
-/* Fim 
+})
 
-
-/* Escrever texto 
-var recebeTexto = document.getElementById("escrever")
-var texto = ['Olá, meu nome é Nathálya'];
+/* Texto passando na tela */
+var recebeTexto = document.getElementById("sliderText")
+var texto = ['Olá meu nome é Nathálya', 'Em busca de oportunidade', 'Desenvolvedora Front-end'];
 
 function escreverTexto(str, done) {
     var letras = str.split('').reverse();
@@ -47,29 +39,18 @@ function limpar(done) {
         recebeTexto.innerHTML = letras.slice(0, numero);
     }, 100);
 }
-
 function rodape(conteudos, el) {
     var atual = -1;
 	function prox(cb){
-        if (atual < conteudos.length - 1) atual++;
+		if (atual < conteudos.length - 1) atual++;
 		else atual = 0;
 		var str = conteudos[atual];
 		escreverTexto(str, function(){
-            limpar(prox);
+			limpar(prox);
 		});
 	}
 	prox(prox);
 }
 rodape(texto);
-/* Fim  */
+/* Fim Texto passando na tela */
 
-
-/* Botão para exibir mais projetos 
-var ticTacToe = document.getElementById('tic-tac-toe');
-function exibirMais() {
-    if (ticTacToe.style.display === 'none') {
-        ticTacToe.style.display = 'block'
-    } else {
-        ticTacToe.style.display = 'none'
-    }
-}*/

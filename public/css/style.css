@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    color: #fff;
 }
 
 html,
@@ -14,7 +17,234 @@ body {
 
 body {
     font-family: "Roboto", sans-serif;
+    background: #191F1F;
+    height: 100vh;
+    display: flex;
+    overflow-x: auto;
+    min-height: 570px;
+}
+aside {
+    min-width: 320px;
 }
 
 /* Fim reset */
 
+
+.home {
+    max-height: 570px;
+}
+
+aside {
+    background-color: #E5E1DE;
+}
+aside img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    max-width: 450px;
+    max-height: 450px;
+}
+.homeText {
+    width: 100%;
+    height: auto;
+    background: #191F1F;
+    color: #fff;
+    margin-top: -4px;
+}
+.homeText h2 {
+    color: #DFDAD6;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Rufina, sans-serif;
+    margin: 0px 0px 16px 32px;
+}
+.home p {
+    margin-left: 32px;
+    font-weight: 400;
+    font-size: 14px;
+} 
+
+nav {
+    position: fixed;
+    top: 45%;
+    background-color: #262E31;
+    width: 100%;
+    /* min-width: 320px; */
+    display: none;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    font-size: 14px;
+}
+#linksAnimation {
+    background-color: #DFDAD6;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+main {
+    font-family: 'Lato', sans-serif;
+    min-width: 320px;
+    max-height: 570px;
+}
+
+.aboutMe {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.aboutMe h3 {
+    margin: 32px;
+}
+.aboutMe section {
+    background: #22272B;
+    border-radius: 8px;
+    width: 80%;
+    height: 134px;
+    max-width: 323px;
+
+    display: flex;
+
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 14px;
+}
+
+
+.titleTech {
+    font-weight: 400;
+    margin: 32px;
+}
+.techContainer {
+}
+.techList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.techList li {
+    background: #D9D9D9;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 16px;
+}
+.techList img {
+    width: 100%;
+    height: 100%;
+}
+/* Lista oculta */
+.informationtech {
+    display: none;
+}
+
+
+.projects h3 {
+    margin: 32px;
+    font-weight: 400;
+}
+.projectsList {
+    margin-bottom: 32px;
+}
+.nameProject {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.project {
+    width: 80%;
+    height: 220px;
+    margin: 0 auto;
+
+    background: #D9D9D9;
+    border-radius: 8px;
+}
+#showSection {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+}
+.informationsProjects {
+    display: none;
+    background: #D9D9D9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* transition: all 0.5s ease-in; */
+    animation-timing-function: ease-in;
+    animation-duration: .8s;
+    animation-name: slide;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+
+}
+@keyframes slide {
+    from {
+        transform: translate(0px, 100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.hiddenProject {
+    background-image: url("/assets/pictures/Tic-Tac-Toe.png");
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.closeBtn {
+    margin: 8px 0px 0px 8px;
+    background: #262E31;
+    border: none;
+    border-radius: 11px;
+    max-width: 32px;
+    max-height: 32px;
+    padding: 5px;
+}
+.closeImg {
+    width: 80%;
+    height: 80%;
+}
+.projectContainer {
+    background: #262E31;
+    border-radius: 40px 40px 0px 0px;
+    height: 100vh;
+    top: 125px;
+    position: relative;
+}
+.nameProjectTitle {
+    padding: 32px 0px 0px 32px;
+    font-family: Rufina, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    width: 100px;
+    margin-bottom: 16px;
+}
+.projectContainer p {
+    padding: 0px 0px 32px 32px;
+    font-size: 14px;
+}
+.projectContainer a {
+    display: flex;
+    justify-content: center;
+}
+.projectContainer button {
+    width: 50%;
+    height: 60px;
+    max-width: 250px;
+    max-height: 70px;
+
+    background: #D9D9D9;
+    color: #000;
+    border-radius: 20px;
+    border: none;
+}
