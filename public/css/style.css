@@ -8,20 +8,15 @@
     list-style: none;
     color: #fff;
 }
-
 html,
 body {
-/*     scroll-behavior: smooth;
-    scroll-padding-top: 90px; */
     overflow: hidden;
 }
-
 body {
     font-family: "Roboto", sans-serif;
     background: #191F1F;
     height: 100vh;
     display: flex;
-    overflow-x: auto;
     min-height: 570px;
 }
 /* Fim reset */
@@ -96,9 +91,13 @@ main {
 .page1, .page2 {
     min-width: 320px;
 }
+.page1 {
+    display: none;
+}
 
 
 nav {
+    display: block;
     position: fixed;
     bottom: 0;
     background-color: #262E31;
@@ -115,6 +114,16 @@ nav ul {
     background-color: #DFDAD6;
     padding: 8px;
     border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#linksAnimation img {
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -174,6 +183,9 @@ nav ul {
 }
 
 
+.page2 {
+
+}
 .projects h3 {
     margin: 32px;
     font-weight: 400;
