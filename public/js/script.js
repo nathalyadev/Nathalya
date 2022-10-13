@@ -53,4 +53,3 @@ function rodape(conteudos, el) {
 }
 rodape(texto);
 /* Fim Texto passando na tela */
-

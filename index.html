@@ -20,101 +20,109 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/responsividade.css">
 
     <!-- JS -->
-    <script defer src="public/js/slider.js"></script>
+    <!-- <script defer src="public/js/slider.js"></script> 
+    -->
     <script defer src="public/js/script.js"></script>
+    <script defer src="public/js/main.js"></script>
 
 </head>
 
 <body>
     <section class="home" id="home">
-        <aside>
-            <img src="assets/myPhoto.svg" alt="">
             <section class="homeText">
                 <h2>Nathálya</h2>
                 <p id="sliderText"></p>
+                <section class="homeFooter">
+                        <img src="assets/icons/arrow-right.svg" alt="">
+                </section>
             </section>
-        </aside>
-
-        <nav>
-            <ul id="listLinks">
-                <li id="linksAnimation" onclick="clique()"><a href="#home"><img src="assets/icons/home.svg" alt=""></a></li>
-                <li id="linksAnimation" onclick="clique()"><a href="#aboutMe">Sobre Mim</a></li>
-                <li id="linksAnimation" onclick="clique()"><a href="#">Hobbies</a></li>
-                <li id="linksAnimation" onclick="clique()"><a href="#">Projetos</a></li>
-                <li id="linksAnimation" onclick="clique()"><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-
     </section>
-
-     <main>
-
-        <section class="aboutMe" id="aboutMe">
-            <h3>Sobre Mim</h3>
-            <section>
-                <p>
-                    Desenvolvedora Front-end <br> 
-                    Paixão por tecnologia <br>
-                </p>
-            </section>
-        </section>
-
-        <section class="techs">
-            <h3 class="titleTech">Tecnologias</h3>
-            <section class="techContainer">
-                <ul class="techList">
-                    <li>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
-                        <section class="informationtech">
-                            <h3 class="heading">HTML</h3>
-                            <p class="description">
-                               Dominio na linguagem de marcação HTML 
-                            </p>
-                        </section>
-                    </li>
-                    <li>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
-                    </li>
-                    <li>
-                        <img src="https://blog.vandersonguidi.com.br/wp-content/uploads/2016/11/js3.png" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/icons/jogos.svg" alt="">
-                    </li>
+    
+    <main>
+        <section class="page1">
+            <nav>
+                <ul id="listLinks">
+                    <li class="addSection" id="linksAnimation"><img src="assets/icons/home.svg" alt=""></li>
+                   <!--  <li id="linksAnimation" onclick="clique()"><a href="#aboutMe">Sobre Mim</a></li>
+                    <li id="linksAnimation" onclick="clique()"><a href="#">Hobbies</a></li>
+                    <li id="linksAnimation" onclick="clique()"><a href="#">Projetos</a></li>
+                    <li id="linksAnimation" onclick="clique()"><a href="#">Contato</a></li> -->
                 </ul>
-            </section>
+            </nav>
+   
+           <section class="aboutMe" id="aboutMe">
+               <h3>Sobre Mim</h3>
+               <section>
+                   <p>
+                       Sou Desenvolvedora Front-end há um ano...
+                       Desenvolvedora Front-end <br> 
+                       Paixão por tecnologia <br>
+                   </p>
+               </section>
+           </section>
+   
+           <section class="techs">
+               <h3 class="titleTech">Tecnologias</h3>
+               <section class="techContainer">
+                   <ul class="techList">
+                       <li>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+                           <section class="informationtech">
+                               <h3 class="heading">HTML</h3>
+                               <p class="description">
+                                  Dominio na linguagem de marcação HTML 
+                               </p>
+                           </section>
+                       </li>
+                       <li>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
+                       </li>
+                       <li>
+                           <img src="https://blog.vandersonguidi.com.br/wp-content/uploads/2016/11/js3.png" alt="">
+                       </li>
+                       <li>
+                           <img src="assets/icons/jogos.svg" alt="">
+                       </li>
+                   </ul>
+               </section>
+           </section>
+
         </section>
 
-        <section class="projects">
-            <h3>Projetos</h3>
-            <ul>
-                <li class="projectsList">
-                    <h4 class="nameProject">Landing Page</h4>
-                    <section class="project">
-                        <img id="showSection" src="assets/pictures/Tic-Tac-Toe.png" alt="">
-                        
-                        <section class="informationsProjects">
-                            <section class="hiddenProject">
-                                    <button class="closeBtn">
-                                        <img class="closeImg" src="assets/icons/closeBtn.svg" alt="">
-                                    </button>
-                                    
-                                <section class="projectContainer">
-                                    <h4 class="nameProjectTitle">Landing Page</h4>
-                                    <p>Landing Page de uma pizzaria simples e com poucas funcionalidades</p>
-                                    <a href="">
-                                        <button>Acessar Site</button>
-                                    </a>
+        <section class="page2">
+            <section class="projects">
+                <h3>Projetos</h3>
+                <ul>
+                    <li class="projectsList">
+                        <h4 class="nameProject">Landing Page</h4>
+                        <section class="project">
+                            <img id="showSection" src="assets/pictures/Tic-Tac-Toe.png" alt="">
+                            
+                            <section class="informationsProjects">
+                                <section class="hiddenProject">
+                                        <button class="closeBtn">
+                                            <img class="closeImg" src="assets/icons/closeBtn.svg" alt="">
+                                        </button>
+                                        
+                                    <section class="projectContainer">
+                                        <h4 class="nameProjectTitle">Landing Page</h4>
+                                        <p>Landing Page de uma pizzaria simples e com poucas funcionalidades</p>
+                                        <a href="">
+                                            <button>Acessar Site</button>
+                                        </a>
+                                    </section>
                                 </section>
                             </section>
+    
                         </section>
+                    </li>
+                    
+                </ul>
+            </section>
 
-                    </section>
-                </li>
-                
-            </ul>
         </section>
 
     </main> 
