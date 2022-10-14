@@ -1,0 +1,4 @@
+
+
+Se botão (seta para a direita) for clicado então remove a seção Home e adiciona a seção About.
+Se botão (Casa) for clicado então remove a seção About e adiciona a seção Home.
