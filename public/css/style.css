@@ -103,20 +103,20 @@ nav {
     background-color: #262E31;
     min-width: 320px;
 }
-nav ul {
+#listLinks {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
     padding: 10px;
     font-size: 14px;
+    justify-content: space-between;
 }
 #linksAnimation {
-    background-color: #DFDAD6;
     padding: 8px;
     border-radius: 50%;
 
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +125,14 @@ nav ul {
     width: 25px;
     height: 25px;
 }
+.ocultName {
+    display: none;
+    position: absolute;
+    top: -20px;
+}
+/* #linksAnimation:hover .ocultName {
+    display: block;
+} */
 
 
 .aboutMe {
@@ -132,21 +140,23 @@ nav ul {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
-.aboutMe h3 {
+.titleAbout {
     margin: 32px;
 }
 .aboutMe section {
-    background: #22272B;
-    border-radius: 8px;
     width: 80%;
-    height: 134px;
-    max-width: 323px;
-
+    max-width: 320px;
     display: flex;
-
+    flex-direction: column;
     margin: 0 auto;
-    padding: 1rem;
     font-size: 14px;
+}
+.aboutMe p:nth-child(3) {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.titleName {
+    margin-bottom: 8px;
 }
 
 
@@ -157,12 +167,11 @@ nav ul {
 .techContainer {
 }
 .techList {
-    display: grid;
+    display: flex;
     gap: 1rem;
-    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 .techList li {
     background: #D9D9D9;
@@ -184,7 +193,7 @@ nav ul {
 
 
 .page2 {
-
+    display: none;
 }
 .projects h3 {
     margin: 32px;

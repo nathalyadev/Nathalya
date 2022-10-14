@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathálya Lima</title>
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/style.css">
@@ -27,72 +28,98 @@
     -->
     <script defer src="public/js/script.js"></script>
     <script defer src="public/js/main.js"></script>
+    <script defer src="public/js/graphic.js"></script>
 
 </head>
 
 <body>
     <section class="home" id="home">
-            <section class="homeText">
-                <h2>Nathálya</h2>
-                <p id="sliderText"></p>
-                <section class="homeFooter">
-                        <img src="assets/icons/arrow-right.svg" alt="">
-                </section>
+        <section class="homeText">
+            <h2>Nathálya</h2>
+            <p id="sliderText"></p>
+            <section class="homeFooter">
+                <img src="assets/icons/arrow-right.svg" alt="">
             </section>
+        </section>
     </section>
-    
+
     <main>
         <section class="page1">
             <nav>
                 <ul id="listLinks">
-                    <li class="addSection" id="linksAnimation"><img src="assets/icons/home.svg" alt=""></li>
-                    <li id="linksAnimation" onclick="clique()"><i class="bi bi-person"></i></li>
-                    <li id="linksAnimation" onclick="clique()"><a href="#">Hobbies</a></li>
-                    <li id="linksAnimation" onclick="clique()"><a href="#">Projetos</a></li>
-                    <li id="linksAnimation" onclick="clique()"><a href="#">Contato</a></li> 
+                    <li class="addSection" id="linksAnimation">
+                        <img src="assets/icons/home.svg" alt="">
+                        <span class="ocultName">Home</span>
+                    </li>
+                    <li id="linksAnimation">
+                        <img src="assets/icons/about.svg" alt="">
+                        <span class="ocultName">Sobre mim</span>
+                    </li>
+                    <li id="linksAnimation">
+                        <img src="assets/icons/tech.svg" alt="">
+                        <span class="ocultName">Tecnologias</span>
+                    </li>
+                    <li id="linksAnimation">
+                        <img src="assets/icons/project.svg" alt="">
+                        <span class="ocultName">Projetos</span>
+                    </li>
+                    <li id="linksAnimation">
+                        <img src="assets/icons/contact.svg" alt="">
+                        <span class="ocultName">Contato</span>
+                    </li>
                 </ul>
             </nav>
-   
-           <section class="aboutMe" id="aboutMe">
-               <h3>Sobre Mim</h3>
-               <section>
-                   <p>
-                       Sou Desenvolvedora Front-end há um ano...
-                       Desenvolvedora Front-end <br> 
-                       Paixão por tecnologia <br>
-                   </p>
-               </section>
-           </section>
-   
-           <section class="techs">
-               <h3 class="titleTech">Tecnologias</h3>
-               <section class="techContainer">
-                   <ul class="techList">
-                       <li>
-                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
-                           <section class="informationtech">
-                               <h3 class="heading">HTML</h3>
-                               <p class="description">
-                                  Dominio na linguagem de marcação HTML 
-                               </p>
-                           </section>
-                       </li>
-                       <li>
-                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
-                       </li>
-                       <li>
-                           <img src="https://blog.vandersonguidi.com.br/wp-content/uploads/2016/11/js3.png" alt="">
-                       </li>
-                       <li>
-                           <img src="assets/icons/jogos.svg" alt="">
-                       </li>
-                   </ul>
-               </section>
-           </section>
+
+            <section class="aboutMe" id="aboutMe">
+                <h3 class="titleAbout">Sobre Mim</h3>
+                <section>
+                    <h3 class="titleName">Nathálya Lima</h3>
+                    <p>
+                        Desenvolvedora Front-end há mais de um ano com curso Técnico em informática pelo IFTO,
+                        cursando faculdade de Análise e Desenvolvimento de Sistemas na UNOPAR e com grande paixão pelo
+                        desenvolvimento de software e design.
+                    </p>
+                    <p>
+                        <span>Conhecimentos:</span>
+                    </p>
+                </section>
+                <div id="chartDiv"></div>
+            </section>
 
         </section>
 
         <section class="page2">
+            <section class="techs">
+                <h3 class="titleTech">Tecnologias</h3>
+                <section class="techContainer">
+                    <ul class="techList">
+                        <li>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+                                alt="">
+                            <section class="informationtech">
+                                <h3 class="heading">HTML</h3>
+                                <p class="description">
+                                    Dominio na linguagem de marcação HTML
+                                </p>
+                            </section>
+                        </li>
+                        <li>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://blog.vandersonguidi.com.br/wp-content/uploads/2016/11/js3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/icons/jogos.svg" alt="">
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+
+        <section class="page3">
             <section class="projects">
                 <h3>Projetos</h3>
                 <ul>
@@ -100,13 +127,13 @@
                         <h4 class="nameProject">Landing Page</h4>
                         <section class="project">
                             <img id="showSection" src="assets/pictures/Tic-Tac-Toe.png" alt="">
-                            
+
                             <section class="informationsProjects">
                                 <section class="hiddenProject">
-                                        <button class="closeBtn">
-                                            <img class="closeImg" src="assets/icons/closeBtn.svg" alt="">
-                                        </button>
-                                        
+                                    <button class="closeBtn">
+                                        <img class="closeImg" src="assets/icons/closeBtn.svg" alt="">
+                                    </button>
+
                                     <section class="projectContainer">
                                         <h4 class="nameProjectTitle">Landing Page</h4>
                                         <p>Landing Page de uma pizzaria simples e com poucas funcionalidades</p>
@@ -116,16 +143,16 @@
                                     </section>
                                 </section>
                             </section>
-    
+
                         </section>
                     </li>
-                    
+
                 </ul>
             </section>
 
         </section>
 
-    </main> 
+    </main>
 
 </body>
 
