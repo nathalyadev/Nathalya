@@ -18,6 +18,7 @@ function drawChart() {
     ["Javascript", 2],
     ["Figma", 2],
     ["Git", 1],
+    ["Electron Js", 1],
   ]);
 
   // Set chart options
@@ -35,6 +36,7 @@ function drawChart() {
       2: { color: "#cac4ce" },
       3: { color: "#f7ece1" },
       4: { color: "#f1e3f3" },
+      5: { color: "#ba9be3" },
     },
     legend: {
         textStyle: {color: '#fff'}

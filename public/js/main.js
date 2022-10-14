@@ -1,18 +1,48 @@
-/* Adicionar e remover secao */
-var addSection = document.querySelector(".addSection");
-addSection.addEventListener("click", function() {
-    var home = document.getElementById("home");
-    var page1 = document.querySelector(".page1");
-    if (home.style.display = "block") {
-        page1.style.display = "none";
+var home = document.getElementById("home");
+var pageAbout = document.querySelector(".page1");
+var pageTech = document.querySelector(".page2");
+var pageProject = document.querySelector(".page3");
+
+var addSectionHome = document.getElementById("addSectionHome");
+var deleteSection = document.querySelector(".homeFooter");
+
+/* Adicionar secao Sobre e remover secao Home */
+addSectionHome.addEventListener("click", function() {
+    if (home.style.display = "none") {
+        pageAbout.style.display = "none"
+        home.style.display = "block"
+    } 
+})
+deleteSection.addEventListener("click", function() {
+    if (home.style.display = "none") {
+        pageAbout.style.display = "block";
     } 
 })
 
-var deleteSection = document.querySelector(".homeFooter");
-deleteSection.addEventListener("click", function() {
-    var home = document.getElementById("home");
-    var page1 = document.querySelector(".page1");
+var addSectionAbout = document.getElementById("addSectionAbout");
+
+/* Adicionar secao Tech e remover secao Sobre*/
+addSectionAbout.addEventListener("click", function() {
     if (home.style.display = "none") {
-        page1.style.display = "block";
+        pageAbout.style.display = "block"
+    } 
+    console.log("teste")
+})
+
+var addSectionTech = document.getElementById("addSectionTech");
+
+addSectionTech.addEventListener("click", function() {
+    if (home.style.display = "none" && pageAbout.style.display == "block") {
+        pageAbout.style.display = "none"
+        pageTech.style.display = "block"
+    } 
+})
+
+var addSectionProject = document.getElementById("addSectionProject");
+
+addSectionProject.addEventListener("click", function() {
+    if (home.style.display = "none" && pageAbout.style.display == "block") {
+        pageAbout.style.display = "none"
+        pageProject.style.display = "block"
     } 
 })
