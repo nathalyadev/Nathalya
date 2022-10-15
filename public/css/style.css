@@ -28,8 +28,10 @@ body {
     max-height: 570px;
     background-color: #E5E1DE;
     min-width: 320px;
-    width: 425px;
+    width: 100%;
+    max-width: 350px;
     position: relative;
+    border-right: 1px solid #fff;
 
     background-image: url("/assets/myPhoto.png");
     background-repeat: no-repeat;
@@ -84,7 +86,7 @@ main {
     font-family: 'Lato', sans-serif;
     min-width: 320px;
     max-height: 570px;
-
+    display: none;
 }
 .page1, .page2 {
     min-width: 320px;
