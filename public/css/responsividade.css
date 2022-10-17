@@ -5,21 +5,66 @@
     }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (max-width: 425px) {
     .home  {
         width: 425px;
         max-width: 500px;
         background-size: 100% 75%;
+        max-height: 700px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .home  {
+        background-size: 80% 70%;
+        max-width: 100%;
+    }
+    .homeText {
+        height: 260px;
+        padding-top: 32px;
     }
 }
 
 @media only screen and (min-width: 500px) {
     .home {
-        max-width: 350px;
+        max-width: 100%;
     }
 } 
 
+@media only screen and (min-width: 550px) {
+    .home {
+        background-size: 65% 70%;
+        max-width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 660px) {
+    main {
+        overflow: overlay;
+    }
+    .home {
+        background-size: 90% 70%;
+        max-width: 100%;
+    }
+    .homeFooter, main nav {
+        display: none;
+    }
+    main, .page1, .homeNavbar, .page2, .page3, .page4  {
+        display: block;
+    }
+
+    .titleAbout {
+        margin: 32px 0px 32px 10px;
+    }
+    .aboutMe section {
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+    .page1 {
+        max-width: 650px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

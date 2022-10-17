@@ -24,11 +24,10 @@
     <link rel="stylesheet" href="public/css/responsividade.css">
 
     <!-- JS -->
-    <!-- <script defer src="public/js/slider.js"></script> 
-    -->
     <script defer src="public/js/script.js"></script>
     <script defer src="public/js/main.js"></script>
     <script defer src="public/js/graphic.js"></script>
+    <script defer src="public/js/navbar.js"></script>
 
 </head>
 
@@ -41,6 +40,31 @@
                 <img src="assets/icons/arrow-right.svg" alt="">
             </section>
         </section>
+
+        <nav class="homeNavbar">
+            <ul>
+                <li>
+                    <img src="assets/icons/home.svg" alt="">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <img src="assets/icons/about.svg" alt="">
+                    <a href="#aboutMe">Sobre mim</a>
+                </li>
+                <li>
+                    <img src="assets/icons/tech.svg" alt="">
+                    <a href="#techs">Tecnologias</a>
+                </li>
+                <li>
+                    <img src="assets/icons/project.svg" alt="">
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <img src="assets/icons/contact.svg" alt="">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
     </section>
 
     <main>
@@ -90,7 +114,7 @@
         </section>
 
         <section class="page2">
-            <section class="techs">
+            <section class="techs" id="techs">
                 <h3 class="titleTech">Tecnologias</h3>
                 <section class="techContainer">
                     <ul class="techList">
@@ -125,7 +149,7 @@
 
 
         <section class="page3">
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h3>Projetos</h3>
                 <ul>
                     <li class="projectsList">
@@ -200,11 +224,12 @@
                         </section>
                     </li>
                 </ul>
+                <span>Para saber mais clique sobre as imagens</span>
             </section>
         </section>
 
         <section class="page4">
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h3>Contato</h3>
                 <form class="contact-form" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013"
                     method="POST">
