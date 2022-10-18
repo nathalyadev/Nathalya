@@ -122,7 +122,7 @@ ul, li, a {
 main {
     font-family: 'Lato', sans-serif;
     min-width: 320px;
-    max-height: 570px;
+    
 /*     display: none; */
 }
 .page1, .page2 {
@@ -139,6 +139,7 @@ main nav {
     bottom: 0;
     background-color: #262E31;
     min-width: 320px;
+    width: 100%;
     z-index: 2;
 }
 #listLinks {
@@ -261,7 +262,7 @@ main nav {
     color: #a9a9a9;
 }
 .projectsList {
-    margin-bottom: 32px;
+    margin-bottom: 50px;
     min-width: 320px;
 }
 .nameProject {
@@ -270,33 +271,30 @@ main nav {
 }
 .project {
     width: 80%;
-    height: 220px;
+/*     height: 220px; */
     margin: 0 auto;
 
-    background: #D9D9D9;
     border-radius: 8px;
 }
 #showSection {
     width: 100%;
     height: 100%;
-    /* position: relative; */
-    border-radius: 8px;
 }
 .informationsProjects {
-    display: none;
-    background: #D9D9D9;
+    /* 
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    /* transition: all 0.5s ease-in; */
+    transition: all 0.5s ease-in; 
     animation-timing-function: ease-in;
     animation-duration: .8s;
     animation-name: slide;
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     z-index: 2;
+    */
 
 }
 @keyframes slide {
@@ -307,14 +305,19 @@ main nav {
         transform: translateY(0);
     }
 }
-.hiddenProject {
-    background-image: url("/assets/pictures/Tic-Tac-Toe.png");
-    background-position: center top;
-    background-size: 80% auto;
-    background-repeat: no-repeat;
+.headerproject {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.projectImage {
+
+}
+.projectImage img {
+    width: 100%;
+    height: auto;
 }
 .closeBtn {
-    margin: 8px 0px 0px 8px;
     background: #262E31;
     border: none;
     border-radius: 11px;
@@ -326,13 +329,6 @@ main nav {
     width: 80%;
     height: 80%;
 }
-.projectContainer {
-    background: #262E31;
-    border-radius: 40px 40px 0px 0px;
-    height: 100vh;
-    top: 125px;
-    position: relative;
-}
 .nameProjectTitle {
     padding: 32px 0px 0px 32px;
     font-family: Rufina, sans-serif;
@@ -342,8 +338,7 @@ main nav {
     margin-bottom: 16px;
 }
 .projectContainer p {
-    padding: 0px 0px 32px 32px;
-    font-size: 14px;
+    padding: 10px 0 10px;
 }
 .projectContainer a {
     display: flex;
@@ -403,12 +398,12 @@ main nav {
 
 .footer {
     margin-top: 50px;
-    background-color: #d9d9d9;
+    background-color: #ccc;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-/*     margin-bottom: 5rem; */
+    margin-bottom: 4rem;
     height: 200px;
 }
 .footerHeader {
@@ -417,4 +412,8 @@ main nav {
 }
 .footerContainer {
     text-align: center;
+}
+.social img {
+    width: 32px;
+    height: 32px;
 }

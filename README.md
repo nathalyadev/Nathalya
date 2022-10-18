@@ -2,8 +2,9 @@
 # Sobre o projeto
 Este projeto foi criado com o intuito de reunir em uma só página informações e projetos que foram desenvolvidos para melhorar meus conhecimentos de design, HTML, CSS e Javascript.
 
+# Este projeto está sendo refatorado e melhorado
 ## Layout do projeto
-![127 0 0 1_5500_ (1)](https://user-images.githubusercontent.com/83317033/170095795-60f7a6d9-a012-419c-887e-76218fc4390b.png)
+
 ## Tecnologias utilizadas
 - HTML
 - CSS

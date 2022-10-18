@@ -1,4 +1,4 @@
-var closeBtn = document.querySelector(".closeBtn");
+/* var closeBtn = document.querySelector(".closeBtn");
 var ocult = document.querySelector(".informationsProjects");
 
 closeBtn.addEventListener("click", function() {
@@ -10,7 +10,7 @@ var showSection = document.getElementById("showSection");
 showSection.addEventListener("click", function() {
     ocult.style.display = "block";
 
-})
+}) */
 
 /* Texto passando na tela */
 var recebeTexto = document.getElementById("sliderText")
