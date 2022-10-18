@@ -123,7 +123,7 @@ main {
     font-family: 'Lato', sans-serif;
     min-width: 320px;
     max-height: 570px;
-    display: none;
+/*     display: none; */
 }
 .page1, .page2 {
     min-width: 320px;
@@ -183,7 +183,7 @@ main nav {
 }
 .aboutMe section {
     width: 80%;
-    min-width: 320px;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     margin: 0px 32px 0 32px;
@@ -244,11 +244,7 @@ main nav {
     margin: 32px;
     font-weight: 400;
 }
-.projects ul {
-    display: inline-flex;
-    width: 100%;
-    overflow: overlay;
-}
+
 .projects ul::-webkit-scrollbar {
     height: 15px;
 }
@@ -374,7 +370,8 @@ main nav {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 50%;
+    min-width: 280px;
     margin: 0 auto;
 }
 .contact-form input, .contact-form textarea {
