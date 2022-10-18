@@ -3,6 +3,9 @@
         max-width: 450px;
         background-size: 100% 75%;
     }
+    .homeText {
+        height: 40vh;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -12,16 +15,17 @@
         background-size: 100% 75%;
         max-height: 700px;
     }
+    
 }
 
 @media only screen and (min-width: 450px) {
     .home  {
-        background-size: 80% 70%;
+        background-size: 100% 62%;
         max-width: 100%;
     }
     .homeText {
-        height: 260px;
-        padding-top: 32px;
+        height: 50vh;
+        padding-top: 50px;
     }
 }
 
@@ -31,20 +35,16 @@
     }
 } 
 
-@media only screen and (min-width: 550px) {
-    .home {
-        background-size: 65% 70%;
-        max-width: 100%;
-    }
-} 
-
 @media only screen and (min-width: 660px) {
     main {
         overflow: overlay;
+        max-height: 100vh;
     }
     .home {
-        background-size: 90% 70%;
-        max-width: 100%;
+        background-size: 45% 63%;
+        background-attachment: fixed;
+        background-position: top left;
+        max-width: 350px;
     }
     .homeFooter, main nav {
         display: none;
@@ -61,19 +61,63 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .page1 {
-        max-width: 650px;
+@media only screen and (min-width: 720px) {
+    .titleAbout {
+        margin-left: 32px;
+    }
+    .home {
+        background-size: 45% 63%;
+    }
+
+    .page3 {
+        margin-bottom: 32px;
+    }
+    .page3, .page4 {
+        height: auto;
+        margin-top: 32px;
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .home { background-size: 41% 63%;}
+}
+
+@media only screen and (min-width: 820px) {
+    .home { background-size: 39% 63%;}
+}
+
 @media only screen and (min-width: 1024px) {
+    .home {
+        max-width: 320px;
+        background-size: 31.1% 59%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    .home {
+        background-size: 26.7% 53%;
+    }
+}
+
+@media only screen and (min-width: 1320px) {
+    .home {
+        background-size: 24.3% 53%;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
+    body, 
+        .projectContainer p, 
+        .homeNavbar a, 
+        #listLinks, 
+        .aboutMe section,
+        .homeText p {
+        font-size: 16px;
+    }
+    .home {
+        max-width: 350px;
+        background-size: 25.2% 55%;
+    }
 }
 
 @media only screen and (min-width: 2560px) {

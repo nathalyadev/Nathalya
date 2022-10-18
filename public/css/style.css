@@ -97,8 +97,25 @@ ul, li, a {
     width: 100%;
     margin: 32px 0 32px 0;
 }
+.homeNavbar li {
+    padding: 8px;
+    text-align: left;
+    padding-left: 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.homeNavbar li:hover {
+    background: #262e31;
+}
 .homeNavbar a {
     color: #fff;
+    font-size: 14px;
+}
+.homeNavbar img {
+    width: 16px;
+    height: 16px;
 }
 
 
@@ -228,9 +245,24 @@ main nav {
     font-weight: 400;
 }
 .projects ul {
-    padding-bottom: 5rem;
     display: inline-flex;
     width: 100%;
+    overflow: overlay;
+}
+.projects ul::-webkit-scrollbar {
+    height: 15px;
+}
+.projects ul::-webkit-scrollbar-track {
+    background-color: #d9d9d9;
+}
+.projects ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid rgb(38, 46, 49, 0.5);
+}
+.info {
+    display: flex;
+    justify-content: center;
+    color: #a9a9a9;
 }
 .projectsList {
     margin-bottom: 32px;
@@ -379,7 +411,7 @@ main nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 5rem;
+/*     margin-bottom: 5rem; */
     height: 200px;
 }
 .footerHeader {
