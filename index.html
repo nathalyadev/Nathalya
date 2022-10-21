@@ -21,73 +21,49 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/responsividade.css">
+<!--     <link rel="stylesheet" href="public/css/responsividade.css"> -->
 
     <!-- JS -->
     <script defer src="public/js/script.js"></script>
-    <script defer src="public/js/main.js"></script>
     <script defer src="public/js/graphic.js"></script>
-    <script defer src="public/js/navbar.js"></script>
 
 </head>
 
 <body>
     <section class="home" id="home">
+
         <section class="homeText">
             <h2>Nathálya</h2>
             <p id="sliderText"></p>
-            <section class="homeFooter">
-                <img src="assets/icons/arrow-right.svg" alt="">
-            </section>
         </section>
 
         <nav class="homeNavbar">
             <ul>
                 <li>
-                    <img src="assets/icons/about.svg" alt="">
-                    <a href="#aboutMe">Sobre mim</a>
+                    <a href="#aboutMe">
+                        <img src="assets/icons/about.svg" alt="">
+                        <span>
+                            Sobre mim
+                        </span> 
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/icons/tech.svg" alt="">
-                    <a href="#techs">Tecnologias</a>
+                    <a href="#projects">
+                        <img src="assets/icons/project.svg" alt="">
+                        <span>Projetos</span>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/icons/project.svg" alt="">
-                    <a href="#projects">Projetos</a>
-                </li>
-                <li>
-                    <img src="assets/icons/contact.svg" alt="">
-                    <a href="#contact">Contato</a>
+                    <a href="#contact">
+                        <img src="assets/icons/contact.svg" alt="">
+                        <span>Contato</span>
+                    </a>
                 </li>
             </ul>
         </nav>
     </section>
 
     <main>
-        <nav>
-            <ul id="listLinks">
-                <li id="addSectionHome" class="linksAnimation">
-                    <img src="assets/icons/home.svg" alt="">
-                    <span class="ocultName">Home</span>
-                </li>
-                <li id="addSectionAbout" class="linksAnimation">
-                    <img src="assets/icons/about.svg" alt="">
-                    <span class="ocultName">Sobre mim</span>
-                </li>
-                <li id="addSectionTech" class="linksAnimation">
-                    <img src="assets/icons/tech.svg" alt="">
-                    <span class="ocultName">Tecnologias</span>
-                </li>
-                <li id="addSectionProject" class="linksAnimation">
-                    <img src="assets/icons/project.svg" alt="">
-                    <span class="ocultName">Projetos</span>
-                </li>
-                <li id="addSectionContact" class="linksAnimation">
-                    <img src="assets/icons/contact.svg" alt="">
-                    <span class="ocultName">Contato</span>
-                </li>
-            </ul>
-        </nav>
 
         <section class="page1">
 
@@ -110,41 +86,6 @@
         </section>
 
         <section class="page2">
-            <section class="techs" id="techs">
-                <h3 class="titleTech">Tecnologias</h3>
-                <section class="techContainer">
-                    <ul class="techList">
-                        <li>
-                            <img src="assets/logo/logo-html.svg" alt="">
-                            <section class="informationtech">
-                                <h3 class="heading">HTML</h3>
-                                <p class="description">
-                                    Dominio na linguagem de marcação HTML
-                                </p>
-                            </section>
-                        </li>
-                        <li>
-                            <img src="assets/logo/logo-css.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="assets/logo/logo-js.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="assets/logo/logo-figma.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="assets/logo/logo-git.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="assets/logo/logo-electronjs.svg" alt="">
-                        </li>
-                    </ul>
-                </section>
-            </section>
-        </section>
-
-
-        <section class="page3">
             <section class="projects" id="projects">
                 <h3>Projetos</h3>
                 <ul>
@@ -216,11 +157,10 @@
                         </section>
                     </li>
                 </ul>
-                <span class="info">Para saber mais clique sobre as imagens</span>
             </section>
         </section>
 
-        <section class="page4">
+        <section class="page3">
             <section class="contact" id="contact">
                 <h3>Contato</h3>
                 <form class="contact-form" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013"

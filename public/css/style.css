@@ -9,14 +9,13 @@
 }
 html,
 body {
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 body {
     font-family: "Roboto", sans-serif;
     background: #191F1F;
     height: 100vh;
-    display: flex;
+    min-width: 320px;
     min-height: 570px;
 }
 ul, li, a {
@@ -90,32 +89,30 @@ ul, li, a {
     height: 32px;
 }
 .homeNavbar {
-    display: none;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 32px 0 32px 0;
+    position: fixed;
+    top: 50%;
 }
 .homeNavbar li {
     padding: 8px;
     text-align: left;
-    padding-left: 32px;
+    padding-left: 8px;
+    background-color: #DFDAD6;
 
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.homeNavbar li:hover {
-    background: #262e31;
-}
 .homeNavbar a {
     color: #fff;
     font-size: 14px;
 }
+.homeNavbar a > span {
+    display: none;
+
+}
 .homeNavbar img {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -127,9 +124,6 @@ main {
 }
 .page1, .page2 {
     min-width: 320px;
-}
-.page1 {
-    display: none;
 }
 
 
@@ -165,7 +159,7 @@ main nav {
     height: 25px;
 }
 .ocultName {
-    display: none;
+    
     position: absolute;
     top: -20px;
 }
@@ -199,48 +193,6 @@ main nav {
 }
 
 
-.page2 {
-    display: none;
-}
-.titleTech {
-    font-weight: 400;
-    margin: 32px;
-}
-.techContainer {
-}
-.techList {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-}
-.techList li {
-    background: #D9D9D9;
-    border-radius: 8px;
-    width: 85px;
-    height: 85px;
-    max-width: 250px;
-    max-height: 250px;
-    padding: 16px;
-}
-.techList img {
-    width: 100%;
-    height: 100%;
-}
-/* Lista oculta */
-.informationtech {
-    display: none;
-}
-
-
-.page3, .page4 {
-    display: none;
-    height: 100vh;
-    overflow: overlay;
-}
 .projects h3 {
     margin: 32px;
     font-weight: 400;
@@ -273,45 +225,16 @@ main nav {
     width: 80%;
 /*     height: 220px; */
     margin: 0 auto;
-
     border-radius: 8px;
 }
 #showSection {
     width: 100%;
     height: 100%;
 }
-.informationsProjects {
-    /* 
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease-in; 
-    animation-timing-function: ease-in;
-    animation-duration: .8s;
-    animation-name: slide;
-    animation-fill-mode: forwards;
-    transform: translateY(-20px);
-    z-index: 2;
-    */
-
-}
-@keyframes slide {
-    from {
-        transform: translate(0px, 100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
 .headerproject {
     padding: 8px;
     display: flex;
     align-items: center;
-}
-.projectImage {
-
 }
 .projectImage img {
     width: 100%;
