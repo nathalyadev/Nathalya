@@ -225,7 +225,8 @@ main nav {
     border-radius: 8px;
 }
 .listProject {
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 #showSection {
     width: 100%;
@@ -266,25 +267,24 @@ main nav {
 .projectContainer p {
     padding: 10px 0 10px;
 }
-.projectContainer a {
-    display: flex;
-    justify-content: center;
-}
 .projectContainer button {
     width: 50%;
-    height: 60px;
+    height: auto;
     max-width: 250px;
     max-height: 70px;
+    padding: 16px;
+    font-size: 14px;
 
-    background: #D9D9D9;
+    background: #e5e1de;
     color: #000;
-    border-radius: 20px;
+    border-radius: 9px;
     border: none;
+    font-weight: bold;
 }
 
 
 .contact h3 {
-    margin: 32px 0px 24px 20px;
+    margin: 32px 0px 24px 40px;
     font-weight: 400;
     color: #fff;
 }
@@ -293,7 +293,7 @@ main nav {
     flex-direction: column;
     width: 50%;
     min-width: 280px;
-    margin: 0 auto;
+    margin-left: 42px;
 }
 .contact-form input, .contact-form textarea {
     padding: 8px;
