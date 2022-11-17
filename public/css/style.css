@@ -29,6 +29,9 @@ h4 {
 .techs, .projects {
     color: #fff;
 }
+.topic, .projectContainer button, .btnSubmit button {
+    cursor: pointer;
+}
 
 
 .home {
@@ -192,6 +195,9 @@ main nav {
 .titleName {
     margin-bottom: 8px;
 }
+#chartDiv {
+    margin-left: 50px;
+}
 
 
 .projects h3 {
@@ -266,8 +272,24 @@ main nav {
     width: 100px;
     margin-bottom: 16px;
 }
-.projectContainer p {
-    padding: 10px 0 10px;
+.topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.topic {
+    background: #e5e1de;
+    color: #000;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+.topic:hover, button:hover, .projectContainer button:hover {
+    background: #191f1f;
+    color: white;
+    border: 2px solid white;
 }
 .projectContainer button {
     width: 50%;
@@ -278,7 +300,6 @@ main nav {
     font-size: 14px;
 
     background: #e5e1de;
-    color: #000;
     border-radius: 9px;
     border: none;
     font-weight: bold;
@@ -318,7 +339,6 @@ main nav {
 .btnSubmit button {
     width: 50%;
     padding: 8px;
-    color: #000;
     font-weight: bold;
 }
 
