@@ -1,7 +1,8 @@
 # Portfólio
 # Sobre o projeto
-Este projeto foi criado com o intuito de reunir em uma só página informações e projetos que foram desenvolvidos para melhorar meus conhecimentos de design, HTML, CSS e Javascript.
+Portfólio de página única 
 
+![alt](https://nathgit198/Nathalya/assets/screenshot/index.html.png)
 # Este projeto está sendo refatorado e melhorado
 ## Layout do projeto
 
@@ -10,7 +11,7 @@ Este projeto foi criado com o intuito de reunir em uma só página informações
 - CSS
 - Javascript
 - Fontes do Google
-- Figma (para construção do layout)
+- Figma (para construção do Layout)
 
 ## Mais informações
 - #### Link para acesso - https://nathgit198.github.io/Nathalya/
