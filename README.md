@@ -32,7 +32,7 @@
 # :star2: Sobre o projeto
 Portfólio de desenvolvedora Front-end contendo todos os projetos desenvolvidos
 
-## Layout do projeto
+## :camera: Layout do projeto
 ![alt](https://github.com/Nathgit198/Nathalya/blob/main/assets/screenshot/index.html.png)
 
 ### :compass: Ajustes e melhorias
@@ -42,7 +42,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [X] Adicionar projetos utilizando Javascript 
 - [ ] Incluir mais detalhes
 
-## Tecnologias utilizadas
+## :space_invader: Tecnologias utilizadas
 - HTML
 - CSS
 - Javascript
