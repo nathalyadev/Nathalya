@@ -236,8 +236,8 @@ main nav {
     flex-wrap: wrap;
 }
 #showSection {
-    min-width: 280px;
-    min-height: 280px;
+    min-width: 260px;
+    min-height: 260px;
     max-width: 450px;
     max-height: 350px;
     width: 100%;
