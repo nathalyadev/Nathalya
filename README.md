@@ -39,7 +39,7 @@ Portfólio de página única
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Adicionar projetos utilizando Javascript 
+- [X] Adicionar projetos utilizando Javascript 
 - [ ] Incluir mais detalhes
 
 ## Tecnologias utilizadas
