@@ -30,7 +30,7 @@
 </div>
 
 # :star2: Sobre o projeto
-Portfólio de página única 
+Portfólio de desenvolvedora Front-end contendo todos os projetos desenvolvidos
 
 ## Layout do projeto
 ![alt](https://github.com/Nathgit198/Nathalya/blob/main/assets/screenshot/index.html.png)
