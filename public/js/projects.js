@@ -9,7 +9,7 @@ var project1 = {
         styleLanguage: "CSS",
         markupLanguage: "HTML"
     },
-    link: "https://nathgit198.github.io/Tic-Tac-Toe/",
+    link: "https://nathalyadev.github.io/Tic-Tac-Toe/",
 }
 
 var project2 = {
@@ -21,7 +21,7 @@ var project2 = {
         styleLanguage: "CSS",
         markupLanguage: "HTML"
     },
-    link: "https://github.com/Nathgit198/To-Do-List",
+    link: "https://github.com/nathalyadev/To-Do-List",
 }
 
 
