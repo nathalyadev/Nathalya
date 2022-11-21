@@ -50,7 +50,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - Figma (para construção do Layout)
 
 ## :handshake: Contact
-- #### Linkedin: https://www.linkedin.com/in/nath%C3%A1lya-lima-1b1976215/
+- #### Linkedin: https://www.linkedin.com/in/nath%C3%A1lya-lima/
 
 - #### E-mail: ns.contato21@gmail.com
 
