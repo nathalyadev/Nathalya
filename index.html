@@ -21,7 +21,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/responsividade.css">
+    <!-- <link rel="stylesheet" href="public/css/responsividade.css"> -->
 
     <!-- JS -->
     <script defer src="public/js/script.js"></script>
@@ -32,28 +32,29 @@
 
 <body>
     <section class="home" id="home">
-        <img class="myPhoto" src="assets/myPhoto.png" alt="">
+
         <section class="homeText">
-            <h2>Nathálya</h2>
-            <p id="sliderText"></p>
+            <section class="logoImg">
+                <img src="assets/logo/logoLightMode.svg" alt="">
+            </section>
+            <section class="textHome">
+                <h2>Nathálya</h2>
+                <p id="sliderText"></p>
+            </section>
         </section>
 
-        <nav class="homeNavbar">
+        <nav class="navbar">
             <ul>
                 <li>
                     <a href="#home">
                         <img src="assets/icons/home.svg" alt="">
-                        <span>
-                            Home
-                        </span> 
+                        <span>Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#aboutMe">
                         <img src="assets/icons/about.svg" alt="">
-                        <span>
-                            Sobre mim
-                        </span> 
+                        <span>Sobre mim</span>
                     </a>
                 </li>
                 <li>
@@ -73,80 +74,78 @@
     </section>
 
     <main>
-
-        <section class="page1">
-
-            <section class="aboutMe" id="aboutMe">
-                <h3 class="titleAbout">Sobre Mim</h3>
-                <section>
-                    <h3 class="titleName">Nathálya Lima</h3>
-                    <p>
-                        Desenvolvedora Front-end há mais de um ano com curso Técnico em informática pelo IFTO,
-                        cursando faculdade de Análise e Desenvolvimento de Sistemas na UNOPAR e com grande paixão pelo
-                        desenvolvimento de software e design.
-                    </p>
-                    <p>
-                        <span>Conhecimentos:</span>
-                    </p>
-                </section>
-                <div id="chartDiv"></div>
+        <section class="aboutMe" id="aboutMe">
+            <h3 class="titleAbout">Sobre Mim</h3>
+            <section>
+                <p class="about">
+                    Desenvolvedora Front-end há mais de um ano com curso Técnico em informática pelo IFTO,
+                    cursando faculdade de Análise e Desenvolvimento de Sistemas na UNOPAR e com grande paixão pelo
+                    desenvolvimento de software e design.
+                </p>
+                <p class="skills">Conhecimentos e Habilidades:</p>
             </section>
-
+            <div id="chartDiv"></div>
         </section>
 
-        <section class="page2">
-            <section class="projects" id="projects">
-                <h3>Projetos</h3>
-                <ul class="listProject" id="myListProject">
-                </ul>
-            </section>
+        <section class="projects" id="projects">
+            <h3>Projetos</h3>
+            <ul class="listProject" id="myListProject"></ul>
         </section>
 
-        <section class="page3">
-            <section class="contact" id="contact">
-                <h3>Contato</h3>
-                <form class="contactForm" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013"
-                    method="POST">
-                    <input type="hidden" name="_next" value="https://nathalyadev.github.io/Nathalya/public/pages/thanks.html">
-                    <input type="hidden" name="_template" value="box">
+        <section class="contact" id="contact">
+            <h3>Contato</h3>
+            <form class="contactForm" action="https://formsubmit.co/dc8f62e48fdbed5cdc0929b10fc51013" method="POST">
+                <input type="hidden" name="_next"
+                    value="https://nathalyadev.github.io/Nathalya/public/pages/thanks.html">
+                <input type="hidden" name="_template" value="box">
 
-                    <label for="name">Nome</label>
-                    <input type="name" name="name" id="name" placeholder="Digite seu nome" required>
+                <label for="name">Nome</label>
+                <input type="name" name="name" id="name" placeholder="Digite seu nome" required>
 
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
 
-                    <label for="message">Mensagem</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem"
-                        required></textarea>
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem"
+                    required></textarea>
 
-                    <section class="btnSubmit">
-                        <button type="submit">Enviar</button>
-                    </section>
-                </form>
-            </section>
-            <section class="footer">
-                <section class="footerHeader">
-                    <img src="assets/logo.svg" alt="">
-                    <p>Nathálya Lima</p>
+                <section class="btnSubmit">
+                    <button type="submit">Enviar</button>
                 </section>
-                <section class="footerContainer">
-                    <section class="social">
-                        <a href="https://github.com/nathalyadev" target="_blank">
-                            <img src="assets/icons/GitHub.svg" alt="">
-                        </a>
-                        <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima/" target="_blank">
-                            <img src="assets/icons/LinkedIn.svg" alt="">
-                        </a>
+            </form>
+        </section>
+
+        <section class="footer">
+            <section class="footerHeader">
+                <img src="assets/logo/logoLightMode.svg" alt="">
+            </section>
+            <section class="footerContainer">
+                <section class="social">
+                    <section class="socialEmail">
                         <a href="ns.contato21@gmail.com" target="_blank">
-                            <img src="assets/icons/Gmail.svg" alt="">
+                            <img src="assets/icons/Email.svg" alt="">
                         </a>
+                    </section>
+
+                    <section class="socialInstagram">
                         <a href="https://www.instagram.com/nathalyadev/" target="_blank">
                             <img src="assets/icons/Instagram.svg" alt="">
                         </a>
                     </section>
-                    <span>Criado por Nathálya Lima | Todos os direitos reservados 2022</span>
+
+                    <section class="socialGithub">
+                        <a href="https://github.com/nathalyadev" target="_blank">
+                            <img src="assets/icons/GitHub.svg" alt="">
+                        </a>
+                    </section>
+                    
+                    <section class="socialLinkedin">
+                        <a href="https://www.linkedin.com/in/nath%C3%A1lya-lima/" target="_blank">
+                            <img src="assets/icons/LinkedIn.svg" alt="">
+                        </a>
+                    </section>
                 </section>
+                <span>Criado por Nathálya Lima | Todos os direitos reservados 2022</span>
             </section>
         </section>
 

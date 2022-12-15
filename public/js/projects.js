@@ -28,15 +28,17 @@ var project2 = {
 var projects = [project1, project2]
 
 function getProject() {
-    var liProject = document.createElement("li");
-    liProject.className = "projectsList";
-    listProjects.appendChild(liProject);
-
     for (var i = 0; i < projects.length; i++) {
-        liProject.innerHTML += 
+        listProjects.innerHTML += 
+        "<li class='projectsList'>" +
             "<h4 class='nameProject'>" + projects[i].name + "</h4>" +
             "<section class='project'>" + 
-            "<img id='showSection' src='" + projects[i].img + "'>" +
+                "<section class='imgProject'>" +
+                    "<img class='imageProject' src='" + projects[i].img + "'>" +
+                    "<a class='btnAccess' target='_blank' href='" + projects[i].link + "'>" +
+                        "<button>Acessar</button>"          +  
+                    "</a>" +
+                "</section>" +
                 "<section class='informationsProjects'>" +
                     "<section class='projectContainer'>" +
                         "<section class='topics'>" +
@@ -45,12 +47,10 @@ function getProject() {
                             "<p class='topic'>" + projects[i].topics.markupLanguage + "</p>" +
                             "<p class='topic'>" + projects[i].topics.styleLanguage + "</p>" +
                         "</section>" +
-                        "<a target='_blank' href='" + projects[i].link + "'>" +
-                            "<button>Acessar</button>"
-                        "</a>"
                     "</section>" +
                 "</section>" +
-            "</section>"    
+            "</section>"    +
+        "</li>"
     }
 }
 
