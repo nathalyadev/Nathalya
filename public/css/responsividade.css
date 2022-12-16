@@ -1,5 +1,19 @@
 @media only screen and (max-width: 320px) {}
 
+@media only screen and (min-width: 400px) {
+    .titleAbout,
+    .aboutMe section,
+    .projects h3,
+    #chartDiv,
+    .listProject,
+    .contact {
+        margin-left: 2.1875rem;
+    }
+    .imgProject, .imageProject, .informationsProjects {
+        width: 380px;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .titleAbout,
     .aboutMe section,
