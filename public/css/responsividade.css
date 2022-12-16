@@ -1,4 +1,13 @@
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    .navbar li {
+        width: 40px;
+    }
+
+    .navbar img {
+        width: 15px;
+        height: 15px;
+    }
+}
 
 @media only screen and (min-width: 400px) {
     .titleAbout,
