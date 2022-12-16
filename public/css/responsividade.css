@@ -1,24 +1,46 @@
-@media only screen and (max-width: 320px) {
-   
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (min-width: 500px) {
+    .titleAbout,
+    .aboutMe section,
+    .projects h3,
+    #chartDiv,
+    .listProject,
+    .contact {
+        margin-left: 3.125rem;
+    }
+
+    .homeText {
+        left: 3.125rem;
+    }
 }
 
 @media only screen and (max-width: 650px) {
     .homeText {
         flex-direction: column;
+        width: 100%;
+        max-width: 650px;
+        left: 0;
     }
-    .textHome, .textHome h2 {
+
+    .textHome,
+    .textHome h2 {
         color: #fff;
         text-align: center;
     }
+
     .aboutMe {
         margin-top: 225px;
     }
+
     .contactForm {
         width: 65%;
     }
+
     .navbar li {
         width: 50px;
     }
+
     .navbar img {
         width: 30px;
         height: 30px;
@@ -26,15 +48,17 @@
 }
 
 @media only screen and (max-width: 720px) {
-    .titleAbout, .aboutMe section, .projects h3, #chartDiv, .listProject, .contact {
+
+    .titleAbout,
+    .aboutMe section,
+    .projects h3,
+    #chartDiv,
+    .listProject,
+    .contact {
         margin-left: 4.375rem;
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    
-}
+@media only screen and (min-width: 1024px) {}
 
-@media only screen and (min-width: 1524px) {
-    
-}
+@media only screen and (min-width: 1524px) {}
