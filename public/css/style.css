@@ -111,12 +111,13 @@ h4 {
     position: fixed;
     top: 50%;
 }
-
+.navbar ul {
+    background-color: #DFDAD6;
+}
 .navbar li {
     padding: 8px;
     text-align: left;
     padding-left: 8px;
-    background-color: #DFDAD6;
 
     display: flex;
     align-items: center;
@@ -347,7 +348,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 4rem;
 }
 .footerHeader {
     display: inline-flex;
