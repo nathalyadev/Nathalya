@@ -16,14 +16,15 @@ function drawChart() {
     ["HTML", 3],
     ["CSS", 3],
     ["Javascript", 2],
-    ["Figma", 2],
+    ["Figma", 3],
     ["Git", 1],
     ["Electron Js", 1],
+    ["VueJs", 1],
   ]);
 
   // Set chart options
   var options = {
-    width: 320,
+    width: 350,
     height: 300,
     pieHole: 0.6,
     backgroundColor: "transparent",
@@ -37,6 +38,7 @@ function drawChart() {
       3: { color: "#f7ece1" },
       4: { color: "#f1e3f3" },
       5: { color: "#ba9be3" },
+      6: { color: "#7E77C8" },
     },
     legend: {
         textStyle: {color: '#fff'}
