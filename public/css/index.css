@@ -1,0 +1,114 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-header);
+
+  padding: 0.5em 1em;
+}
+
+header img {
+  /* width: 70px;
+    height: 70px; */
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.875em;
+}
+
+.navigation ul a {
+  color: var(--white);
+}
+
+main {
+  margin: 1em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.125em;
+}
+
+.header-informations {
+  background-image: url("../assets/blob.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: var(--white);
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2em;
+}
+
+.header-informations div h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 8ch;
+}
+
+.header-informations p {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-me-container {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 500px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  padding: 1.875em 2em;
+}
+
+.about-me {
+  background-color: var(--background-color-about-me);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+
+  padding: 1.875em 2em;
+
+  color: var(--white);
+}
+
+.about-me p,
+.about-me h1 {
+  color: var(--white);
+}
+
+.about-me div,
+.technologies div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me p {
+  font-family: Inter;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --background-color: #191725;
+    --background-color-header: #211F2D;
+    --background-color-about-me: #424769;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: var(--background-color);
+    overflow: auto;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.title {
+    color: #000;
+
+    font-family: "Montserrat Alternates";
+    font-size: 1.3125em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}

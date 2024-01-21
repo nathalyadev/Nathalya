@@ -1,14 +1,8 @@
-// Load the Visualization API and the corechart package.
 google.charts.load("current", { packages: ["corechart"] });
 
-// Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(drawChart);
 
-// Callback that creates and populates a data table,
-// instantiates the pie chart, passes in the data and
-// draws it.
 function drawChart() {
-  // Create the data table.
   var data = new google.visualization.DataTable();
   data.addColumn("string", "Topping");
   data.addColumn("number", "Slices");
@@ -22,30 +16,28 @@ function drawChart() {
     ["VueJs", 1],
   ]);
 
-  // Set chart options
   var options = {
-    width: 350,
-    height: 300,
-    pieHole: 0.6,
-    backgroundColor: "transparent",
+    width: 500,
+    height: 400,
+    pieHole: 0.5,
+    backgroundColor: "#F1F1F1",
     pieSliceTextStyle: {
-      color: "#fff",
+      color: "#000",
     },
     slices: {
-      0: { color: "#9067c6" },
-      1: { color: "#8d86c9" },
-      2: { color: "#cac4ce" },
-      3: { color: "#f7ece1" },
-      4: { color: "#f1e3f3" },
-      5: { color: "#ba9be3" },
+      0: { color: "#59518C" },
+      1: { color: "#756CBF" },
+      2: { color: "#CAACF2" },
+      3: { color: "#9B9BC1" },
+      4: { color: "#676F9D" },
+      5: { color: "#BEB3D5" },
       6: { color: "#7E77C8" },
     },
     legend: {
-        textStyle: {color: '#fff'}
-    }
+      textStyle: { color: "#000" },
+    },
   };
 
-  // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.PieChart(
     document.getElementById("chartDiv")
   );
